@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/react-ofra-personal/static/css/main.c4642ff5.css",
+    "main.js": "/react-ofra-personal/static/js/main.0df949b6.js",
+    "index.html": "/react-ofra-personal/index.html",
+    "main.c4642ff5.css.map": "/react-ofra-personal/static/css/main.c4642ff5.css.map",
+    "main.0df949b6.js.map": "/react-ofra-personal/static/js/main.0df949b6.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c4642ff5.css",
+    "static/js/main.0df949b6.js"
+  ]
+}
