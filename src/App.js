@@ -1,25 +1,30 @@
-import logo from './logo.svg';
-import './App.css';
+import React, {useState} from "react"
 
-function App() {
+import Navbar from './componenets/Navbar'
+import MainContent from "./componenets/MainContent";
+import './App.css'
+import NavItem from "./componenets/NavItem"
+import Footer from "./componenets/Footer";
+
+
+export default function App() {
+
+  const [isHome , changeIsHome] = useState(true)
+  const [id , changeId] = useState(1)
+  const { data } = require('./data')
+
+  function toggleIsHome(isVisible, id){
+    changeIsHome(isVisible)
+    changeId(id)
+  }
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="page-wrapper">
+      <Navbar data={data} toggle={toggleIsHome}/>
+      <div className="container">
+        {isHome ? <MainContent data={data} toggle={toggleIsHome} /> : <NavItem data={data[id]} toggle={toggleIsHome}/>}
+      </div>
+      {/* <Footer /> */}
     </div>
   );
 }
-
-export default App;

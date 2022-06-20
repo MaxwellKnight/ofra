@@ -1,0 +1,144 @@
+/*============================
+    navigation styles 
+  ============================
+*/
+
+:root {
+    --light-blue: #B9E6FF; /* creating variables for convinence */
+    --dark-blue: #5C95FF;
+    --dark-pink: #F87575;
+    --light-pink: #FFA9A3;
+    --brown: #7E6C6C;
+    --light-black: #393939;
+}
+
+img {
+    width: 100%;
+}
+
+.navigation {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 70px;
+    width: 100%;
+    background-color: var(--light-blue);
+    position:fixed;
+}
+
+.navigation-logo {
+    width: 60px;
+    padding: .5em;
+    order: 1;
+    cursor: pointer;
+}
+
+.navigation-bar {
+    font-size: 1.5em;
+    display: block;
+    padding: 0 1em;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+.navigation-bar:hover{
+    transform: scale(1.1);
+}
+.navigation-list {
+    display: none;
+}
+
+.navigation-item:hover,
+.navigation-item:focus {
+    background-color: var(--dark-blue);
+    cursor: pointer;
+}
+
+/* when the viewport reaches minimum of 675px
+    then these styles will apply, this section allows
+    the application to become responsive
+*/
+@media screen and (min-width: 675px) {
+    
+    body {
+        font-size: 14px;
+    }
+
+    .navigation {
+        min-height: 100vh;
+        flex-direction: column;
+        width: 20%;
+        text-align: center;
+        background-color: var(--light-blue);
+        justify-content: flex-start;
+    }
+
+    .navigation-item {
+        line-height: 1.2rem;
+        padding: 1.7em;   
+        list-style: none;
+        width: 100%;
+    }
+
+    @media (max-width: 1000px){
+        .navigation-item {
+            padding: 1em;
+        }
+    }
+
+    .navigation-logo {
+        width: 60%;
+        aspect-ratio: 1;
+        order: -1;
+    }
+
+    .navigation-list {
+        margin-top: 1rem;
+        display: block;
+    }
+
+    .navigation-bar{
+        display: none;
+    }
+}
+.nav-item-wrapper{
+    width: 100%;
+    height: 100vh;
+    background-color: #FFF;
+}
+
+.nav-list-mobile {
+    position:absolute;
+    top: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--light-blue);
+    text-align: center;
+}
+
+.nav-item-mobile {
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+    padding: 3.2rem;
+    cursor: pointer;
+}
+
+.nav-item-mobile:hover,
+.nav-item-mobile:focus {
+    background-color: var(--dark-blue);
+}
+
+.close-nav {
+    font-size: 3rem;
+    width: fit-content;
+    display: block;
+    margin: 0 auto;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+.close-nav:hover{
+    transform: scale(0.9);
+    transform: rotateY('360');
+}
