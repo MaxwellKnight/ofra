@@ -2,6 +2,7 @@ import {React, useState} from "react"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import {  faBars, faWindowClose } from "@fortawesome/free-solid-svg-icons"
 import '../css/navbar.css'
+import mandala from "../images/mandala.png"
 
 export default function Navbar(props){
 
@@ -48,7 +49,7 @@ export default function Navbar(props){
 
     return (
         <nav className="navigation">
-            <img className="navigation-logo" src="../../images/mandala.png" alt="logo" onClick={() => toggle(true)} />
+            <img className="navigation-logo" src={mandala} alt="logo" onClick={() => toggle(true)} />
             <FontAwesomeIcon onClick={(toggleIsMobile)} className="navigation-bar" icon={faBars}/>
             {printNav()}
         </nav>

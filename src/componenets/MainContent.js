@@ -1,6 +1,7 @@
 import {React, useState} from 'react'
-import Footer from './Footer'
 import "../css/mainContent.css"
+import background from '../images/background.png'
+import portrait from '../images/portrait.jpeg'
 
 export default function MainContent (){
 
@@ -16,7 +17,7 @@ export default function MainContent (){
     return (
         <main className="main-content">
             <section className="main-hero">
-                <img src="../images/background.png" alt="" className="main-image"/>
+                <img src={background} alt="" className="main-image"/>
                 <h2 className="main-title">עופרה יחיאלי</h2>
                 <p className="main-text">המיפגשים שלי עם אנשים בקבוצה וגם עם האדם, שאותו אני מלווה באופן פרטני,
 ממחישים לי כל פעם מחדש את הכוח של נתינה וקבלה בתוך מרחב 
@@ -30,7 +31,7 @@ export default function MainContent (){
 שמוביל לשינוי הרצוי.</p>
 
                 <aside className="main-about" style={styles}>
-                    <img src="../images/portrait.jpeg" alt="" className="main-portrait" />
+                    <img src={portrait} alt="" className="main-portrait" />
                     <p className="main-about-text">
                     שמי עופרה (אנגל) יחיאלי, ילידת 1955 הרצליה
 מזה 40 שנה מתגוררת בבאר-שבע
