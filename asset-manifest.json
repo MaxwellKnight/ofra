@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/react-ofra-personal/static/css/main.c4642ff5.css",
-    "main.js": "/react-ofra-personal/static/js/main.c3fb5fc6.js",
+    "main.js": "/react-ofra-personal/static/js/main.97fce622.js",
     "static/media/background.png": "/react-ofra-personal/static/media/background.95c86c24efa00349be8e.png",
     "static/media/mandala.png": "/react-ofra-personal/static/media/mandala.24d656bd3ed39489c70d.png",
     "index.html": "/react-ofra-personal/index.html",
     "main.c4642ff5.css.map": "/react-ofra-personal/static/css/main.c4642ff5.css.map",
-    "main.c3fb5fc6.js.map": "/react-ofra-personal/static/js/main.c3fb5fc6.js.map"
+    "main.97fce622.js.map": "/react-ofra-personal/static/js/main.97fce622.js.map"
   },
   "entrypoints": [
     "static/css/main.c4642ff5.css",
-    "static/js/main.c3fb5fc6.js"
+    "static/js/main.97fce622.js"
   ]
 }
