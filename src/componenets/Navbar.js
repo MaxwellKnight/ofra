@@ -19,30 +19,22 @@ export default function Navbar(props){
      */
     function printNav(){
         return (
-            <ul className={isMobile ? "nav-list-mobile": "navigation-list"  }>
-                {isMobile ? <FontAwesomeIcon className="close-nav" icon={faWindowClose} onClick={toggleIsMobile}/> : ""}
-                {data.map(item => {
-                    return (
-                        <li className={isMobile ?  "nav-item-mobile" : "navigation-item"} key={item.id} onClick={() => {
+            <>
+                <FontAwesomeIcon onClick={toggleIsMobile} className="navigation-bar" icon={faBars}/>
+                <ul className={isMobile ? "nav-list-mobile": "navigation-list"  }>
+                    {isMobile ? <FontAwesomeIcon className="close-nav" icon={faWindowClose} onClick={toggleIsMobile}/> : ""}
+                    {data.map(item => {
+                        return (
+                            <li className={isMobile ?  "nav-item-mobile" : "navigation-item"} key={item.id} onClick={() => {
+                                
+                                changeIsMobile(true)
+                                toggleIsMobile()
+                                return toggle(false, item.id)
                             
-                            changeIsMobile(false)
-                            return toggle(false, item.id)
-                        
-                        }}>{item.title}</li>)
-                })}
-            </ul>
-        )
-    }
-    function css(element, styleToApply){
-        for(const property in styleToApply)
-            element.style[property] = styleToApply[property]
-    }
-
-    /** this function handles the openening the of the nav menu */
-    function handleOnNavClick(){
-
-        return(
-            console.log("Menu Clicked")
+                            }}>{item.title}</li>)
+                    })}
+                </ul>
+            </>
         )
     }
     
@@ -50,7 +42,6 @@ export default function Navbar(props){
     return (
         <nav className="navigation">
             <img className="navigation-logo" src={mandala} alt="logo" onClick={() => toggle(true)} />
-            <FontAwesomeIcon onClick={(toggleIsMobile)} className="navigation-bar" icon={faBars}/>
             {printNav()}
         </nav>
     )

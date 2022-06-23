@@ -26,6 +26,20 @@ img {
     position:fixed;
 }
 
+.move-out-view {
+    transform: translateX(-700px);
+}
+
+.slide-in {
+    transform: translateX(0);
+    transition: all .2s ease-in-out;
+}
+
+.slide-out {
+    transform: translateX(-700px);
+    transition: all .2s ease-in-out;
+}
+
 .navigation-logo {
     width: 60px;
     padding: .5em;
@@ -120,8 +134,9 @@ img {
     display: block;
     width: 100%;
     margin: 0 auto;
-    padding: 3.2rem;
+    padding: 3rem;
     cursor: pointer;
+    font-size: 1.2rem;
 }
 
 .nav-item-mobile:hover,
@@ -135,10 +150,10 @@ img {
     display: block;
     margin: 0 auto;
     cursor: pointer;
-    transition: all 0.2s ease-in-out;
+    transition: all 0.3s ease-in-out;
 }
 
 .close-nav:hover{
     transform: scale(0.9);
-    transform: rotateY('360');
+    transform: rotateZ(180deg);
 }

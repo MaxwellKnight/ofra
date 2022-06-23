@@ -1,13 +1,14 @@
-import {React, useState} from "react"
+import {React} from "react"
 import "../css/navItem.css"
 import Contact from '../componenets/Contact'
+import Books from '../componenets/Books'
 
 export default function NavItem(props){
 
     function printList(list){
         return(
             <ul className="item-list">
-                {list.map((item, index) => <li  key={index}>* {item} *</li>)}
+                {list.map((item, index) => <li  key={index}>{item}</li>)}
             </ul>
         )
     }
@@ -18,6 +19,7 @@ export default function NavItem(props){
                 <p className="item-main-text">{props.data.mainText}</p>
                 {props.data.hasOwnProperty('list') ? printList(props.data.list) : ""}
                 {props.data.id === 6 ?  <Contact /> : ""}
+                {props.data.id === 5 ? <Books /> : ""}
             </div>
     )
 }
