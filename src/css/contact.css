@@ -1,0 +1,56 @@
+.contact-image {
+    width: 100%;
+    height: 50vh;
+    object-fit: cover;
+    border-radius: 6px;
+    box-shadow: 1px 1px 10px;
+    margin-top: 1rem;
+}
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.card {
+    width: 80%;
+    margin: 0 auto;
+}
+
+
+input {
+    width: 100%;
+    height: 3em;
+    margin-bottom: 1rem;
+    text-align: center;
+    font-size: 1.2em;
+}
+
+.btn-contact {
+    width: 100%;
+    height: 3rem;
+    background-color: var(--light-blue);
+    border: none;
+    border-radius: 30px;
+    font-size: 1.5em;
+    font-weight: 700;
+    letter-spacing: 1px;
+    transition: all .2s ease-in-out;
+}
+
+.btn-contact:hover,
+.btn-contact:focus {
+    transform: scale(1.01);
+    cursor: pointer;
+    box-shadow: 1px 1px 5px;
+}
+
+@media (min-width: 675px) {
+
+    .card {
+        width: 50%;
+    }
+
+}

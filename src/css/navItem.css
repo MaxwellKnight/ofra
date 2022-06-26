@@ -1,16 +1,24 @@
-
+.container {
+    background: none;
+}
 
 .item {
     padding-top: 80px;
-    width: 80%;
+    width: 90%;
     display: block;
     margin: 0 auto;
     color: #393939;
     white-space: pre-wrap;
-    text-align: right;
+    text-align: center;
 }
 
-.item-title{
+@media (min-width: 675px) {
+    .item {
+        padding-top: 20px;
+    }
+}
+
+.item-title {
     font-size: 1.5rem;
 }
 

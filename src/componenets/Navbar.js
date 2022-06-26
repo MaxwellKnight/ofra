@@ -1,7 +1,7 @@
 import {React, useState} from "react"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import {  faBars, faWindowClose } from "@fortawesome/free-solid-svg-icons"
-import '../css/navbar.css'
+import '../css/navBar.css'
 import mandala from "../images/mandala.png"
 
 export default function Navbar(props){
