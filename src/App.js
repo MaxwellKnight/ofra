@@ -21,6 +21,7 @@ export default function App() {
     <>
       <Navbar data={data} toggle={toggleIsHome} />
       <div className="container">
+        {/* Check if the user  returned to the hompage or navigated to a different section */}
         {isHome ? <Homepage data={data} toggle={toggleIsHome} /> : <NavItem data={data[id]} toggle={toggleIsHome} />}
       </div>
     </>

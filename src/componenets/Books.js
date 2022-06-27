@@ -12,7 +12,7 @@ export default function Books() {
                 return (
                     <div className='book' key={book.dateReleased}>
                         <h4 className='book-title'>{book.title}</h4>
-                        <img className='book-image' src={book.coverImage} alt="cover of the book" />
+                        <img className='book-image' src={require('../images/placeholder.jpeg')} alt="cover of the book" />
                         <time>{book.dateReleased}</time>
                         <p className='summary'>{book.summary}</p>
                     </div>

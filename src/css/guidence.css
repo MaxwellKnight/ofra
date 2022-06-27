@@ -1,0 +1,52 @@
+h1 {
+    font-size: 1.8rem;
+    color: #393939;
+}
+
+@media (min-width: 675px) {
+    h1 {
+        font-size: 2rem;
+    }
+}
+
+.guidence {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.main-guidence-text {
+    font-size: 1.1em;
+    margin: 2rem 0;
+    letter-spacing: 1px;
+    line-height: 2rem;
+}
+
+.small-text {
+    font-weight: 700;
+    font-size: 1.1em;
+    text-align: right;
+}
+
+.bold {
+    font-size: 2.5rem;
+    color: var(--dark-pink)
+}
+
+
+.alert {
+    padding: 1rem 2rem;
+    border-radius: 6px;
+    margin-bottom: 2rem;
+    font-weight: normal;
+    color: #393939;
+    box-shadow: 1px 1px 5px;
+}
+
+.alert-text {
+    border: 1px solid #e2e2e2;
+    padding: 1rem 2rem;
+    margin: 1rem 0;
+    border-radius: 6px;
+    color: #393939;
+
+}

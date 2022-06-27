@@ -4,7 +4,7 @@ import '../css/contact.css'
 export default function Contact() {
     return (
         <div className='contact'>
-            <img src={require('../images/contact-bg.jpeg')} className='contact-image' alt="" />
+            <img src={require('../images/background.png')} className='contact-image' alt="" />
             <form className="card">
                 <h1>צור קשר</h1>
                 <p className='contact-text'></p>

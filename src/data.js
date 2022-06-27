@@ -1,9 +1,5 @@
 exports.data = [
     {
-        id: 10,
-        title: 'דף הבית'
-    },
-    {
         id: 0,
         title: "אודות",
     },

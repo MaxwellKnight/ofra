@@ -28,7 +28,7 @@ export default function Navbar(props) {
 
                                 changeIsMobile(true)
                                 toggleIsMobile()
-                                return toggle(false, item.id + 1)
+                                return toggle(false, item.id)
 
                             }}>{item.title}</li>)
                     })}
