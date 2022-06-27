@@ -6,7 +6,7 @@ export default function Homepage() {
     return (
         <main className="main-content">
             <section className="main-hero">
-                <img src={background} alt="" className="main-image" />
+                <img src={require('../images/background.png')} alt="" className="main-image" />
                 <h2 className="main-title">דף הבית</h2>
                 <p className="main-text">המיפגשים שלי עם אנשים בקבוצה וגם עם האדם, שאותו אני מלווה באופן פרטני,
                     ממחישים לי כל פעם מחדש את הכוח של נתינה וקבלה בתוך מרחב
