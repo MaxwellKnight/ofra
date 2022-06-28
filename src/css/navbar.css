@@ -26,6 +26,7 @@ img {
     background-color: var(--light-blue);
     position: fixed;
     box-shadow: 1px 1px 15px;
+    z-index: 1000;
 }
 
 .move-out-view {
@@ -141,17 +142,17 @@ img {
     text-align: center;
 }
 
-.nav-list-mobile:last-child {
-    padding-bottom: 10rem;
-}
-
 .nav-item-mobile {
     display: block;
     width: 100%;
     margin: 0 auto;
-    padding: 2.1rem;
+    padding: 1.2rem;
     cursor: pointer;
     font-size: 1.2rem;
+}
+
+.nav-list-mobile:last-child {
+    padding-bottom: 20rem;
 }
 
 .nav-item-mobile:hover,
