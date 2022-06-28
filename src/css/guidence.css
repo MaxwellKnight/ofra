@@ -1,11 +1,11 @@
 h1 {
-    font-size: 1.8rem;
+    font-size: 1.4rem;
     color: #393939;
 }
 
 @media (min-width: 675px) {
     h1 {
-        font-size: 2rem;
+        font-size: 2em;
     }
 }
 
@@ -15,10 +15,10 @@ h1 {
 }
 
 .main-guidence-text {
-    font-size: 1.1em;
+    font-size: 1em;
     margin: 2rem 0;
     letter-spacing: 1px;
-    line-height: 2rem;
+    line-height: 1.5em;
 }
 
 .small-text {
@@ -37,7 +37,6 @@ h1 {
     padding: 1rem 2rem;
     border-radius: 6px;
     margin-bottom: 2rem;
-    font-weight: normal;
     color: #393939;
     box-shadow: 1px 1px 5px;
 }
@@ -48,5 +47,5 @@ h1 {
     margin: 1rem 0;
     border-radius: 6px;
     color: #393939;
-
+    font-weight: 500;
 }

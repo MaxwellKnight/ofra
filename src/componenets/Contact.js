@@ -10,7 +10,7 @@ export default function Contact() {
                 <p className='contact-text'></p>
                 <input className='name' type="text" placeholder='שם' />
                 <input className='email' type="text" placeholder='אימייל' />
-                <button type="submit" className="btn-contact">שליחה</button>
+                <button type="submit" className="btn-contact">שלח/י</button>
             </form>
         </div>
     )

@@ -1,6 +1,5 @@
 .concepts-text,
 .yoga-list-item {
-    font-size: 1.2rem;
     line-height: 2rem;
 }
 
@@ -18,7 +17,7 @@ strong {
     border-radius: 6px;
     margin-bottom: 5rem;
     padding: 0 2rem 2rem 2rem;
-    box-shadow: 1px 1px 5px;
+    box-shadow: 1px 1px 15px;
 }
 
 .yoga-list {

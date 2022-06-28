@@ -23,12 +23,12 @@ export default function Books() {
 
     return (
         <main className="books">
-            <h1>ספרי ילדים</h1>
+            <h1 className='books-section-title'>ספרי ילדים</h1>
             <div className='book-wrapper'>
                 {printBooks('children')}
             </div>
 
-            <h1>ספרונים מעוררי-מחשבה</h1>
+            <h1 className='books-section-title'>ספרונים מעוררי-מחשבה</h1>
             <div className='book-wrapper'>
                 {printBooks('thoughtful')}
             </div>
