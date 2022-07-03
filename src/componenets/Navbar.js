@@ -21,7 +21,7 @@ export default function Navbar(props) {
             <>
                 <FontAwesomeIcon onClick={toggleIsMobile} className="navigation-bar" icon={faBars} />
                 <ul className={isMobile ? "nav-list-mobile" : "navigation-list"}>
-                    {isMobile ? <FontAwesomeIcon className="close-nav" icon={faWindowClose} onClick={toggleIsMobile} /> : ""}
+                    {isMobile ? <FontAwesomeIcon className="close" icon={faWindowClose} onClick={toggleIsMobile} /> : ""}
                     {data.map(item => {
                         return (
                             <li className={isMobile ? "nav-item-mobile" : "navigation-item"} key={item.id} onClick={() => {

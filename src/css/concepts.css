@@ -1,3 +1,5 @@
+/* TYPOGRAPGY - CONCEPTS PAGE */
+
 .concepts-text,
 .yoga-list-item {
     line-height: 2rem;
@@ -5,7 +7,6 @@
 
 .concepts-title {
     text-decoration: underline;
-    color: var(--dark-pink)
 }
 
 strong {
@@ -13,11 +14,13 @@ strong {
     font-size: 1.2em
 }
 
+/* LAYOUT - CONCEPTS PAGE */
+
 .concepts-container {
     border-radius: 6px;
     margin-bottom: 5rem;
     padding: 0 2rem 2rem 2rem;
-    box-shadow: 1px 1px 15px;
+    border: 1px solid var(--brown);
 }
 
 .yoga-list {

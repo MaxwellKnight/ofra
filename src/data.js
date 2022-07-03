@@ -76,7 +76,12 @@ exports.data = [
     },
     {
         id: 8,
+        title: 'גלריה',
+        mainText: ''
+    },
+    {
+        id: 9,
         title: "יצירת קשר",
         mainText: ``
-    }
+    },
 ]

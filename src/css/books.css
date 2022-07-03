@@ -1,11 +1,9 @@
 /* TYPOGRAPHY */
 .books-section-title {
-    margin: 0;
     margin-bottom: 2rem;
     margin-top: 2rem;
     line-height: 2.5rem;
     font-size: 2em;
-    color: var(--dark-pink);
     text-decoration: underline;
 }
 
@@ -18,21 +16,16 @@ h4 {
     font-style: italic;
 }
 
-.book time {
-    margin-top: 2rem;
-}
-
 .book-image {
     display: block;
     height: 300px;
     margin: 0 auto;
     object-fit: cover;
     border-radius: 8px;
-    box-shadow: 1px 5px 10px;
     transition: all .2s ease-in-out;
 }
 
-/* LAYOUT */
+/* GENERAL LAYOUT */
 
 .books {
     display: flex;
@@ -60,8 +53,37 @@ h4 {
     transform: scale(1.01);
     cursor: pointer;
     box-shadow: 5px 5px 25px;
-
 }
+
+/* ======== INDIVIDUAL BOOK ONCLICK LAYOUT ============ */
+
+.book-container {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 100000;
+    /* HEIGHEST Z-INDEX */
+    color: #FFFF;
+    backdrop-filter: blur(5px);
+}
+
+.book-container .book-cover-image {
+    width: 70%;
+}
+
+.book-cover-image {
+    margin-bottom: 2rem;
+    border-radius: 6px;
+}
+
+/* ======== MEDIA QUERIES ========== */
 
 @media (min-width: 800px) {
 
@@ -101,9 +123,18 @@ h4 {
 
 }
 
+@media (min-width: 675px) {
+    .book-container img {
+        max-width: 500px;
+    }
+
+    .book-container {
+        font-size: 1.2em;
+    }
+}
+
 @media (max-width: 1100px) {
     .book-image {
         width: 100%;
-        /* height: ; */
     }
 }

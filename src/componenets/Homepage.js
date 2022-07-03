@@ -5,7 +5,7 @@ const backgroundImage = require('../images/background.png')
 export default function Homepage() {
 
     return (
-        <main className="main-content">
+        <main className="main-content" dir="rtl">
             <section className="main-hero">
                 <img src={backgroundImage} alt="" className="main-image" />
                 <h2 className="main-title">דף הבית</h2>

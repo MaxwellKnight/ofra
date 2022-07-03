@@ -25,7 +25,6 @@ img {
     width: 100%;
     background-color: var(--light-blue);
     position: fixed;
-    box-shadow: 1px 1px 15px;
     z-index: 1000;
 }
 
@@ -101,6 +100,7 @@ img {
         padding: 1.2em;
         list-style: none;
         width: 100%;
+        font-weight: 400;
     }
 
     @media (max-width: 1000px) {
@@ -138,6 +138,7 @@ img {
     max-height: 100vh;
     display: flex;
     flex-direction: column;
+    padding-top: 5rem;
     background-color: var(--light-blue);
     text-align: center;
 }
@@ -160,16 +161,18 @@ img {
     background-color: var(--dark-blue);
 }
 
-.close-nav {
+.close {
     font-size: 3rem;
     width: fit-content;
     display: block;
-    margin: 0 auto;
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
     cursor: pointer;
     transition: all 0.3s ease-in-out;
 }
 
-.close-nav:hover {
+.close:hover {
     transform: scale(0.9);
     transform: rotateZ(90deg);
 }

@@ -1,7 +1,7 @@
 .about-text,
 .aside-text {
     margin: 1rem 0;
-    font-size: 1.2em;
+    font-size: 1em;
     line-height: 2rem;
 }
 
@@ -13,7 +13,6 @@
     max-height: 400px;
     object-fit: cover;
     border-radius: 6px;
-    box-shadow: 1px 1px 15px;
 }
 
 @media (min-width: 675px) {
