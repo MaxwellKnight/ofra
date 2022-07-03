@@ -10,6 +10,7 @@
     padding-bottom: .5rem;
     white-space: pre-wrap;
     text-align: center;
+    animation: slidein 1s ease;
 }
 
 @media (min-width: 675px) {

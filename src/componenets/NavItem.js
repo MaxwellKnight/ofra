@@ -29,7 +29,7 @@ export default function NavItem(props) {
     }
 
     return (
-        <div className="item" dir="rtl">
+        <div key={data.id} className="item" dir="rtl">
             {(!seprateComponent.includes(data.id)) ? <h1 className="item-title">{data.title}</h1> : ""}
             {(!seprateComponent.includes(data.id)) ? <p id="main-text" className="item-main-text">{data.mainText}</p> : ""}
             {data.hasOwnProperty('list') ? printList(data.list) : ""}

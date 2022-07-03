@@ -12,6 +12,7 @@ h1 {
 .guidence {
     max-width: 700px;
     margin: 0 auto;
+    animation: reveal .3s ease;
 }
 
 .main-guidence-text {

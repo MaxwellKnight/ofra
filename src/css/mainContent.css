@@ -45,6 +45,7 @@ h3 {
     display: flex;
     flex-direction: column;
     padding: 1em;
+    animation: slidein 1s ease-in-out;
 }
 
 .main-image {
@@ -89,5 +90,41 @@ h3 {
     .flex {
         width: 100%;
         flex-direction: column;
+    }
+}
+
+/* KEYFRAMES ANIMATIONS */
+
+@keyframes slidein {
+    from {
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+
+    to {
+        opacity: 100%;
+        transform: translateX(0%);
+    }
+}
+
+@keyframes slideout {
+    from {
+        opacity: 100%;
+        transform: translateX(0%);
+    }
+
+    to {
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+}
+
+@keyframes reveal {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 100%;
     }
 }

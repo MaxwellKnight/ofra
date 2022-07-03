@@ -21,6 +21,7 @@ strong {
     margin-bottom: 5rem;
     padding: 0 2rem 2rem 2rem;
     border: 1px solid var(--brown);
+    animation: reveal .4s ease;
 }
 
 .yoga-list {

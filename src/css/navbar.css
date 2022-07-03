@@ -28,26 +28,16 @@ img {
     z-index: 1000;
 }
 
-.move-out-view {
-    transform: translateX(-700px);
-}
-
-.slide-in {
-    transform: translateX(0);
-    transition: all .2s ease-in-out;
-}
-
-.slide-out {
-    transform: translateX(-700px);
-    transition: all .2s ease-in-out;
-}
-
 .navigation-logo {
     width: 60px;
     padding: .5em;
     order: 1;
     cursor: pointer;
     transition: all .2s ease-in-out;
+}
+
+.slideout {
+    animation: slideout .3s ease;
 }
 
 .navigation-logo:hover {
@@ -141,6 +131,7 @@ img {
     padding-top: 5rem;
     background-color: var(--light-blue);
     text-align: center;
+    animation: slidein .3s ease-in-out;
 }
 
 .nav-item-mobile {
