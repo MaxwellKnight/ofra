@@ -32,26 +32,48 @@ h3 {
 
 .main-hero {
     display: flex;
+    width: 90%;
+    /* height: 100vh; */
+    margin: 0 auto;
     flex-direction: column;
     align-items: center;
     margin-top: 80px;
 }
 
 .main-content {
-    width: 90%;
+    width: 100%;
     margin: 0 auto;
     text-align: center;
     line-height: 1.5rem;
     display: flex;
     flex-direction: column;
-    padding: 1em;
     animation: slidein 1s ease-in-out;
+}
+
+.clouds {
+    display: block;
+    margin: 2rem auto;
+    width: 100%;
+    text-align: center;
+    overflow-x: clip;
+}
+
+.cloud-sentences {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background: linear-gradient(to bottom, #FFFF, var(--light-primary));
+    position: relative;
+    bottom: 0;
+    right: 0;
 }
 
 .main-image {
     max-height: 500px;
     object-fit: cover;
     border-radius: 10px;
+    margin-top: 1rem;
 }
 
 .main-text {
@@ -91,10 +113,21 @@ h3 {
         width: 100%;
         flex-direction: column;
     }
+
+    .cloud-sentences {
+        flex-direction: column;
+    }
+
+    .clouds {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
 }
 
 /* KEYFRAMES ANIMATIONS */
 
+/* slide into view animation */
 @keyframes slidein {
     from {
         opacity: 0;
@@ -107,6 +140,7 @@ h3 {
     }
 }
 
+/* slide out of view animation */
 @keyframes slideout {
     from {
         opacity: 100%;
@@ -119,6 +153,7 @@ h3 {
     }
 }
 
+/* slow reveal animation */
 @keyframes reveal {
     from {
         opacity: 0;
@@ -126,5 +161,23 @@ h3 {
 
     to {
         opacity: 100%;
+    }
+}
+
+/* make element float animation */
+@keyframes float {
+    0% {
+        box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.4);
+        transform: translatey(0px);
+    }
+
+    50% {
+        box-shadow: 0 25px 15px 0px rgba(0, 0, 0, 0.2);
+        transform: translatey(-5px);
+    }
+
+    100% {
+        box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.4);
+        transform: translatey(0px);
     }
 }

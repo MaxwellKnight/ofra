@@ -23,7 +23,6 @@ export default function NavItem(props) {
             case 1: return <Concepts />
             case 2: return <Guidence />
             case 7: return <Books />
-            case 9: return <Contact />
             default:
         }
     }

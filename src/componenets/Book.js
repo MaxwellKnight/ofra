@@ -8,9 +8,9 @@ export default function Book(props) {
 
     return (
         <div className='book-container'>
+            <h2>{book.title}</h2>
             <FontAwesomeIcon className='close' icon={faWindowClose} onClick={() => handleCurrentBook(0)} />
             <img className='book-cover-image' src={require('../images/placeholder.jpeg')} alt='book picture' />
-            <h2>{book.title}</h2>
             <p className='book-summary'>{book.summary}</p>
         </div>
     )

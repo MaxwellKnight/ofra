@@ -32,7 +32,7 @@ input {
 .btn-contact {
     width: 100%;
     height: 3rem;
-    background-color: var(--light-blue);
+    background-color: var(--light-primary);
     border: none;
     border-radius: 5px;
     font-size: 1.5em;

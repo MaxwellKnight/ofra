@@ -13,6 +13,7 @@
     max-height: 400px;
     object-fit: cover;
     border-radius: 6px;
+    animation: float 3s infinite ease-in-out;
 }
 
 @media (min-width: 675px) {

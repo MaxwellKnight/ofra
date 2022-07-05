@@ -21,6 +21,7 @@ export default function Books() {
                         <img className='book-image'
                             src={require('../images/placeholder.jpeg')}
                             alt="cover of the book"
+                            style={{ animation: `slidein ${book.id * .5}s ease` }}
                             onClick={() => handleCurrentBook(book.id)} />
                     </div>
                 )
@@ -31,7 +32,7 @@ export default function Books() {
     return (
         <main className="books">
             {currentBook ? <Book book={books.find(book => book.id === currentBook)} handleCurrentBook={handleCurrentBook} /> : ''}
-            <h1 className='books-section-title'>ספרי ילדים</h1>
+            <h1 className='books-section-title'>ספרים לצעירים ולצעירים ברוחם</h1>
             <div className='book-wrapper'>
                 {printBooks('children')}
             </div>

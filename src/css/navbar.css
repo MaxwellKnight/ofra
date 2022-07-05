@@ -4,13 +4,13 @@
 */
 
 :root {
-    --light-blue: #B9E6FF;
     /* creating variables for convinence */
-    --dark-blue: #5C95FF;
-    --dark-pink: #F87575;
-    --light-pink: #FFA9A3;
+    --light-primary: #B9E6FF;
+    --dark-primary: #5C95FF;
+    --dark-secondary: #F87575;
+    --light-secondary: #FFA9A3;
     --brown: #7E6C6C;
-    --light-black: #393939;
+    --text-color: #393939;
 }
 
 img {
@@ -23,7 +23,8 @@ img {
     justify-content: space-between;
     height: 70px;
     width: 100%;
-    background-color: var(--light-blue);
+    background-color: var(--light-primary);
+    box-shadow: 1px 1px 15px;
     position: fixed;
     z-index: 1000;
 }
@@ -60,9 +61,14 @@ img {
     display: none;
 }
 
+.navigation-item {
+    transition: color .1s ease-in-out, background-color .1s ease-in-out;
+}
+
 .navigation-item:hover,
 .navigation-item:focus {
-    background-color: var(--dark-blue);
+    background-color: var(--dark-primary);
+    color: #FFFF;
     cursor: pointer;
 }
 
@@ -81,7 +87,7 @@ img {
         flex-direction: column;
         width: 20%;
         text-align: center;
-        background-color: var(--light-blue);
+        background: var(--light-primary);
         justify-content: flex-start;
     }
 
@@ -129,7 +135,7 @@ img {
     display: flex;
     flex-direction: column;
     padding-top: 5rem;
-    background-color: var(--light-blue);
+    background-color: var(--light-primary);
     text-align: center;
     animation: slidein .3s ease-in-out;
 }
@@ -141,6 +147,7 @@ img {
     padding: 1.2rem;
     cursor: pointer;
     font-size: 1.2rem;
+    transition: color .1s ease-in-out, background-color .1s ease-in-out;
 }
 
 .nav-list-mobile:last-child {
@@ -149,7 +156,9 @@ img {
 
 .nav-item-mobile:hover,
 .nav-item-mobile:focus {
-    background-color: var(--dark-blue);
+    background-color: var(--dark-primary);
+    color: #FFFF;
+    cursor: pointer;
 }
 
 .close {
