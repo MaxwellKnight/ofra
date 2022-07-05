@@ -60,13 +60,11 @@ h3 {
 
 .cloud-sentences {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: wrap;
     justify-content: space-between;
     background: linear-gradient(to bottom, #FFFF, var(--light-primary));
-    position: relative;
-    bottom: 0;
-    right: 0;
+    overflow: hidden;
 }
 
 .main-image {
@@ -86,6 +84,10 @@ h3 {
 .yoga-list {
     list-style-type: none;
     margin-top: 1rem;
+}
+
+.hide {
+    display: none;
 }
 
 @media (min-width: 675px) {

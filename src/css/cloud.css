@@ -1,9 +1,14 @@
+.cloud-p {
+    font-size: 12px;
+    letter-spacing: 1px;
+}
+
 /* Creating the cloud layout */
 .cloud {
-    background-color: white;
+    background-color: #FFFF;
     width: 200px;
     height: 80px;
-    padding: 1rem 3rem;
+    padding: 1rem;
     border-radius: 150px;
     box-shadow: 10px 10px rgba(0, 0, 0, 0.2);
     animation: cloudFloat 5s infinite;
@@ -12,7 +17,7 @@
 
 .cloud::after {
     content: '';
-    background-color: white;
+    background-color: #FFFF;
     position: absolute;
     width: 80px;
     height: 80px;
@@ -24,7 +29,7 @@
 
 .cloud::before {
     content: '';
-    background-color: white;
+    background-color: #FFFF;
     position: absolute;
     width: 120px;
     height: 100px;
@@ -39,7 +44,6 @@
     max-height: 50px;
     padding: .5em;
     border-radius: 20px;
-    background-color: #FFFF;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -47,6 +51,7 @@
 }
 
 .cloud-container {
+    transform: scale(0.8);
     margin-top: 5em;
     display: flex;
     justify-content: center;
@@ -68,18 +73,22 @@
 }
 
 .hidden {
-    display: none;
+    width: 300px;
+    position: absolute;
+    background-color: #FFFF;
+    padding: .5rem;
+    border-radius: 20px;
+    transform: translatex(800px);
+    transition: transform .2s ease-in-out;
+    z-index: 1;
 }
 
-.expended {
-    position: absolute;
-    width: 200px;
-    height: 0;
-    background-color: #FFFF;
-    padding: 1rem;
-    border-radius: 20%;
-    overflow: hidden;
-    transform: translateY(-250px);
+.expend {
+    transform: translatex(0);
+    box-shadow: 1px 1px 10px #FFFF;
+    border: 1px solid var(--light-primary);
+    cursor: pointer;
+    z-index: 1;
 }
 
 /* MEDIA QUERIES */
@@ -88,6 +97,25 @@
     .cloud-text-wrapper:hover,
     .cloud-text-wrapper:focus {
         max-height: 50px;
+    }
+
+    .hidden {
+        width: 300px;
+        position: absolute;
+        background-color: #FFFF;
+        padding: .5rem;
+        border-radius: 20px;
+        transform: translatey(200px);
+        transition: transform .2s ease-in-out;
+        z-index: 1;
+    }
+
+    .expend {
+        transform: translatey(-100px);
+        box-shadow: 1px 1px 10px #FFFF;
+        border: 1px solid var(--light-primary);
+        cursor: pointer;
+        z-index: 1;
     }
 }
 

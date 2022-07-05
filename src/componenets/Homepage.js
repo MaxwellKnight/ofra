@@ -1,6 +1,7 @@
 import '../css/homePage.css'
 import Cloud from "./Cloud"
 import { clouds } from '../clouds'
+import { data } from '../data'
 
 const backgroundImage = require('../images/background.png')
 
@@ -25,9 +26,10 @@ export default function Homepage() {
 
             <section className="cloud-sentences">
                 <h1>משפטים שמלווים אותי לאורך הדרך</h1>
+                <p><strong className='cloud-p'>*כדי לקרוא לחצ/י על הענן</strong></p>
                 <div className="clouds">
                     {clouds.map(cloud => {
-                        return <Cloud key={cloud.id} sentence={cloud.content} />
+                        return <Cloud key={cloud.id} sentence={cloud.content} id={cloud.id} />
                     })}
                 </div>
             </section>
