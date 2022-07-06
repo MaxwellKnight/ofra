@@ -1,7 +1,6 @@
 import '../css/homePage.css'
 import Cloud from "./Cloud"
 import { clouds } from '../clouds'
-import { data } from '../data'
 
 const backgroundImage = require('../images/background.png')
 

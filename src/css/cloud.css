@@ -44,7 +44,6 @@
     max-height: 50px;
     padding: .5em;
     border-radius: 20px;
-    white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
     transition: max-height 2s ease-in-out;
