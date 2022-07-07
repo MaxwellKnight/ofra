@@ -1,17 +1,14 @@
 import React from 'react'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faPhone } from '@fortawesome/free-solid-svg-icons';
 import '../css/contact.css'
 
-export default function Contact() {
+const Contact = () => {
     return (
         <div className='contact'>
-            <img src={require('../images/background.png')} className='contact-image' alt="" />
-            <form className="card">
-                <h1>צור קשר</h1>
-                <p className='contact-text'></p>
-                <input className='name' type="text" placeholder='שם' />
-                <input className='email' type="text" placeholder='אימייל' />
-                <button type="submit" className="btn-contact">שלח/י</button>
-            </form>
+            <FontAwesomeIcon icon={faPhone} className='contact-icon' />
         </div>
     )
 }
+
+export default Contact;

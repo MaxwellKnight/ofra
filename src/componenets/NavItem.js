@@ -1,17 +1,14 @@
-import { React, useEffect } from "react"
+import { React } from "react"
 import "../css/navItem.css"
 import Books from '../componenets/Books'
 import About from '../componenets/About'
 import Guidence from '../componenets/Guidence'
 import Concepts from "./Concepts"
+import Gallery from "./Gallery"
 
-export default function NavItem(props) {
-    const seprateComponent = [0, 1, 3, 8, 9, 2] //id which use different rendering method
+const NavItem = props => {
+    const seprateComponent = [0, 1, 2, 3, 8, 9] //id which use different rendering method
     const { data } = props
-
-    useEffect(() => {
-        console.log('logged item');
-    }, [])
 
     function printList(list) {
         return (
@@ -25,9 +22,10 @@ export default function NavItem(props) {
     function itemToDisplay() {
         switch (data.id) {
             case 0: return <About />
+            case 1: return <Books />
             case 2: return <Concepts />
             case 3: return <Guidence />
-            case 1: return <Books />
+            case 8: return <Gallery />
             default:
         }
     }
@@ -42,3 +40,5 @@ export default function NavItem(props) {
         </div>
     )
 }
+
+export default NavItem;

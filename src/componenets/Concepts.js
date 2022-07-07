@@ -1,7 +1,7 @@
 import React from 'react'
 import '../css/concepts.css'
 
-export default function Concepts() {
+const Concepts = () => {
     return (
         <div className='concepts'>
             <div className='concepts-container'>
@@ -55,3 +55,5 @@ export default function Concepts() {
         </div>
     )
 }
+
+export default Concepts;

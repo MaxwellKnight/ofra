@@ -2,7 +2,7 @@ import React from 'react'
 import { faWindowClose } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
-export default function Book(props) {
+const Book = props => {
 
     const { book, handleCurrentBook } = props
 
@@ -15,3 +15,5 @@ export default function Book(props) {
         </div>
     )
 }
+
+export default Book;

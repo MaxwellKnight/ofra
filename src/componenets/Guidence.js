@@ -1,7 +1,7 @@
 import React from 'react'
 import '../css/guidence.css'
 
-export default function Guidence() {
+const Guidence = () => {
     return (
         <div className='guidence'>
             <h1><span className='bold'>עוצמ״א</span> - ערכים לצמיחה עצמית</h1>
@@ -36,3 +36,5 @@ export default function Guidence() {
         </div>
     )
 }
+
+export default Guidence;

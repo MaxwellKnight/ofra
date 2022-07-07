@@ -3,15 +3,15 @@ import booksData from '../books'
 import '../css/books.css'
 import Book from './Book';
 
-export default function Books() {
+const Books = () => {
     const { books } = booksData;
     const [currentBook, updateCurrentBook] = useState(0);
 
-    function handleCurrentBook(id) {
+    const handleCurrentBook = id => {
         updateCurrentBook(id)
     }
 
-    function printBooks(category) {
+    const printBooks = category => {
         const newBooks = books.map((book) => book.category === category ? book : '').filter(e => e)
         return (
             newBooks.map((book) => {
@@ -44,3 +44,5 @@ export default function Books() {
         </main>
     )
 }
+
+export default Books;

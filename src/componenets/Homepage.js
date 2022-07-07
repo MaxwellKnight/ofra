@@ -4,7 +4,7 @@ import { clouds } from '../clouds'
 
 const backgroundImage = require('../images/background.png')
 
-export default function Homepage() {
+const Homepage = () => {
 
     return (
         <main className="main-content" dir="rtl">
@@ -23,7 +23,7 @@ export default function Homepage() {
                     שמוביל לשינוי הרצוי.</p>
             </section>
 
-            <section className="cloud-sentences">
+            <section id='cloud-section' className="cloud-sentences">
                 <h1>משפטים שמלווים אותי לאורך הדרך</h1>
                 <p><strong className='cloud-p'>*כדי לקרוא לחצ/י על הענן</strong></p>
                 <div className='clouds-only-container'>
@@ -37,3 +37,5 @@ export default function Homepage() {
         </main>
     )
 }
+
+export default Homepage;

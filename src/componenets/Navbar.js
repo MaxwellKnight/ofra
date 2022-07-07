@@ -3,20 +3,20 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faBars, faWindowClose } from "@fortawesome/free-solid-svg-icons"
 import '../css/navBar.css'
 
-export default function Navbar(props) {
+const Navbar = props => {
 
     const { data, toggle } = props
     const [isMobile, changeIsMobile] = useState(false)
 
     /* change isMobile  */
-    function toggleIsMobile() {
+    const toggleIsMobile = () => {
         changeIsMobile(prevIsMobile => !prevIsMobile)
     }
     /**
      * printNav is responsible for printing the navigation in relation
      * to the viewport mobile/desktop
      */
-    function printNav() {
+    const printNav = () => {
         return (
             <>
                 <FontAwesomeIcon onClick={toggleIsMobile} className="navigation-bar" icon={faBars} />
@@ -54,3 +54,5 @@ export default function Navbar(props) {
         </nav>
     )
 }
+
+export default Navbar;

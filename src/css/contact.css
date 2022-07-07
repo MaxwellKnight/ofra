@@ -1,59 +1,33 @@
-.contact-image {
-    width: 100%;
-    height: 50vh;
-    object-fit: cover;
-    border-radius: 6px;
-    margin-top: 1rem;
-}
-
 .contact {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 100%;
-}
-
-.card {
-    margin: 0 auto;
-}
-
-
-input {
-    width: 100%;
-    height: 3em;
-    margin-bottom: 1rem;
-    text-align: center;
-    font-family: inherit;
-    font-size: 1em;
-    border: 1px solid rgba(0, 0, 0, .2);
-    transition: transform .2s ease-in-out, box-shadow .2s ease-in-out;
-}
-
-.btn-contact {
-    width: 100%;
-    height: 3rem;
-    background-color: var(--light-primary);
-    border: none;
-    border-radius: 5px;
-    font-size: 1.5em;
-    font-weight: 700;
-    letter-spacing: 1px;
-    transition: transform .2s ease-in-out, box-shadow .2s ease-in-out;
-}
-
-input:focus,
-.btn-contact:hover,
-.btn-contact:focus {
-    transform: scale(1.01);
+    position: fixed;
+    top: 0;
+    left: 50%;
+    margin-top: .9rem;
+    background-color: rgba(73, 181, 104);
+    filter: blur(0);
+    color: #FFFF;
+    padding: 1rem;
+    border-radius: 50%;
+    animation: float 4s infinite;
+    z-index: 10000000;
     cursor: pointer;
-    box-shadow: 1px 1px 5px;
+    transition: box-shadow .2s ease, filter .2s ease, background-color .3s ease;
+}
+
+.contact:hover,
+.contact:focus {
+    animation-play-state: paused;
+    background-color: rgba(73, 181, 104, .8);
+    filter: blur(1px);
+}
+
+.contact-icon {
+    font-size: 2em;
 }
 
 @media (min-width: 675px) {
-
-    .card {
-        width: 40%;
-        max-width: 300px;
+    .contact {
+        left: auto;
+        right: 1rem;
     }
-
 }

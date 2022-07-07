@@ -4,6 +4,7 @@ import Navbar from './componenets/Navbar'
 import Homepage from "./componenets/Homepage";
 import './App.css'
 import NavItem from "./componenets/NavItem"
+import Contact from "./componenets/Contact";
 
 
 export default function App() {
@@ -19,6 +20,7 @@ export default function App() {
 
   return (
     <>
+      <Contact />
       <Navbar data={data} toggle={toggleIsHome} />
       <div className="container">
         {/* Check if the user  returned to the hompage or navigated to a different section */}

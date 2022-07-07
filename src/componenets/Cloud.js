@@ -1,11 +1,11 @@
 import React from 'react'
 import '../css/cloud.css'
 
-export default function Cloud(props) {
+const Cloud = props => {
 
     const { sentence, id } = props
 
-    function handleCloudClick() {
+    const handleCloudClick = () => {
         const text = window.document.getElementById(`cloud${id}`)
         text.classList.toggle('expend')
     }
@@ -21,3 +21,5 @@ export default function Cloud(props) {
         </div >
     )
 }
+
+export default Cloud;
