@@ -26,10 +26,12 @@ export default function Homepage() {
             <section className="cloud-sentences">
                 <h1>משפטים שמלווים אותי לאורך הדרך</h1>
                 <p><strong className='cloud-p'>*כדי לקרוא לחצ/י על הענן</strong></p>
-                <div className="clouds">
-                    {clouds.map(cloud => {
-                        return <Cloud key={cloud.id} sentence={cloud.content} id={cloud.id} />
-                    })}
+                <div className='clouds-only-container'>
+                    <div className="clouds">
+                        {clouds.map(cloud => {
+                            return <Cloud key={cloud.id} sentence={cloud.content} id={cloud.id} />
+                        })}
+                    </div>
                 </div>
             </section>
         </main>

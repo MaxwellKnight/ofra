@@ -51,11 +51,18 @@ h3 {
 }
 
 .clouds {
-    display: block;
+    display: grid;
+    grid-template-columns: 1fr;
     margin: 2rem auto;
     width: 100%;
     text-align: center;
     overflow-x: clip;
+}
+
+.clouds-only-container {
+    display: block;
+    width: 90%;
+    margin: 0 auto;
 }
 
 .cloud-sentences {
@@ -121,9 +128,11 @@ h3 {
     }
 
     .clouds {
-        display: flex;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
         flex-direction: row;
         justify-content: space-around;
+        overflow-x: visible;
     }
 }
 

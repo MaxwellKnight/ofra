@@ -1,4 +1,4 @@
-import { React } from "react"
+import { React, useEffect } from "react"
 import "../css/navItem.css"
 import Books from '../componenets/Books'
 import About from '../componenets/About'
@@ -8,6 +8,10 @@ import Concepts from "./Concepts"
 export default function NavItem(props) {
     const seprateComponent = [0, 1, 3, 8, 9, 2] //checks which sections use different component
     const { data } = props
+
+    useEffect(() => {
+        console.log('logged item');
+    }, [])
 
     function printList(list) {
         return (

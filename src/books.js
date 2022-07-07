@@ -1,5 +1,3 @@
-const { isValidInputTimeValue } = require("@testing-library/user-event/dist/utils");
-
 exports.books = [
     {
         id: 1,
