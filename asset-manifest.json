@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/ofra/static/css/main.a9f97405.css",
-    "main.js": "/ofra/static/js/main.ca0e4941.js",
+    "main.css": "/ofra/static/css/main.81dcc7f3.css",
+    "main.js": "/ofra/static/js/main.9cbb9220.js",
     "static/media/book-1.jpeg": "/ofra/static/media/book-1.7db31e7e40ab229858a0.jpeg",
     "static/media/book-6.jpeg": "/ofra/static/media/book-6.0d7c61eee026d8d8793d.jpeg",
     "static/media/book-8.jpeg": "/ofra/static/media/book-8.db89a782551d3f33e145.jpeg",
@@ -14,11 +14,11 @@
     "static/media/book-5.jpeg": "/ofra/static/media/book-5.bcb4374a45c8927bbda6.jpeg",
     "static/media/book-7.jpeg": "/ofra/static/media/book-7.6edec7dd72e5aaa01758.jpeg",
     "index.html": "/ofra/index.html",
-    "main.a9f97405.css.map": "/ofra/static/css/main.a9f97405.css.map",
-    "main.ca0e4941.js.map": "/ofra/static/js/main.ca0e4941.js.map"
+    "main.81dcc7f3.css.map": "/ofra/static/css/main.81dcc7f3.css.map",
+    "main.9cbb9220.js.map": "/ofra/static/js/main.9cbb9220.js.map"
   },
   "entrypoints": [
-    "static/css/main.a9f97405.css",
-    "static/js/main.ca0e4941.js"
+    "static/css/main.81dcc7f3.css",
+    "static/js/main.9cbb9220.js"
   ]
 }
