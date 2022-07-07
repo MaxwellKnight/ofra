@@ -21,7 +21,7 @@ export default function Navbar(props) {
             <>
                 <FontAwesomeIcon onClick={toggleIsMobile} className="navigation-bar" icon={faBars} />
                 <ul className={isMobile ? "nav-list-mobile" : "navigation-list"}>
-                    {/* Printing the return to Homepage item */}
+                    {/* Printing */}
                     {isMobile ? <FontAwesomeIcon className="close" icon={faWindowClose} onClick={toggleIsMobile} /> : ""}
                     <li className={isMobile ? "nav-item-mobile" : "navigation-item"} onClick={() => {
                         //refresh the page and return to Homepage
@@ -29,12 +29,14 @@ export default function Navbar(props) {
                         return toggle(true)
                     }}> דף הבית</li>
 
-                    {/* Creating and returning all the navigation items */}
                     {data.map(item => {
                         return (
                             <li className={isMobile ? "nav-item-mobile" : "navigation-item"}
                                 key={item.id}
-                                onClick={() => toggle(false, item.id)}
+                                onClick={() => {
+                                    changeIsMobile()
+                                    return toggle(false, item.id)
+                                }}
                             >{item.title}</li>
                         )
                     })}
