@@ -27,7 +27,7 @@ export default function Homepage() {
                 <h1>משפטים שמלווים אותי לאורך הדרך</h1>
                 <p><strong className='cloud-p'>*כדי לקרוא לחצ/י על הענן</strong></p>
                 <div className='clouds-only-container'>
-                    <div className="clouds">
+                    <div className="clouds"> {/* Printing all the clouds with quotes */}
                         {clouds.map(cloud => {
                             return <Cloud key={cloud.id} sentence={cloud.content} id={cloud.id} />
                         })}
