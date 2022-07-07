@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/ofra/static/css/main.cc1e85f1.css",
-    "main.js": "/ofra/static/js/main.2e64fdee.js",
+    "main.js": "/ofra/static/js/main.c8d629f7.js",
     "static/media/book-1.jpeg": "/ofra/static/media/book-1.7db31e7e40ab229858a0.jpeg",
     "static/media/book-6.jpeg": "/ofra/static/media/book-6.0d7c61eee026d8d8793d.jpeg",
     "static/media/book-8.jpeg": "/ofra/static/media/book-8.db89a782551d3f33e145.jpeg",
@@ -15,10 +15,10 @@
     "static/media/book-7.jpeg": "/ofra/static/media/book-7.6edec7dd72e5aaa01758.jpeg",
     "index.html": "/ofra/index.html",
     "main.cc1e85f1.css.map": "/ofra/static/css/main.cc1e85f1.css.map",
-    "main.2e64fdee.js.map": "/ofra/static/js/main.2e64fdee.js.map"
+    "main.c8d629f7.js.map": "/ofra/static/js/main.c8d629f7.js.map"
   },
   "entrypoints": [
     "static/css/main.cc1e85f1.css",
-    "static/js/main.2e64fdee.js"
+    "static/js/main.c8d629f7.js"
   ]
 }
