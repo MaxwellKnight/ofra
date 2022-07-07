@@ -24,8 +24,7 @@ export default function Navbar(props) {
                     {/* Printing */}
                     {isMobile ? <FontAwesomeIcon className="close" icon={faWindowClose} onClick={toggleIsMobile} /> : ""}
                     <li className={isMobile ? "nav-item-mobile" : "navigation-item"} onClick={() => {
-                        //refresh the page and return to Homepage
-                        window.location.reload(false)
+                        changeIsMobile()
                         return toggle(true)
                     }}> דף הבית</li>
 
@@ -49,8 +48,6 @@ export default function Navbar(props) {
     return (
         <nav className="navigation">
             <img className="navigation-logo" src={require('../images/mandala.png')} alt="logo" onClick={() => {
-                //refresh the page and return to Homepage
-                window.location.reload(false)
                 return toggle(true)
             }} />
             {printNav()}
