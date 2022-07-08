@@ -1,7 +1,9 @@
 .contact {
     position: fixed;
+    width: 60px;
+    height: 60px;
     top: 0;
-    left: 50%;
+    right: 5rem;
     margin-top: .9rem;
     background-color: rgba(73, 181, 104);
     filter: blur(0);
@@ -27,7 +29,7 @@
 
 @media (min-width: 675px) {
     .contact {
-        left: auto;
+        position: fixed;
         right: 1rem;
     }
 }

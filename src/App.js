@@ -1,10 +1,10 @@
 import React, { useState } from "react"
 
 import Navbar from './componenets/Navbar'
-import Homepage from "./componenets/Homepage";
+import Homepage from "./componenets/Homepage"
 import './App.css'
 import NavItem from "./componenets/NavItem"
-import Contact from "./componenets/Contact";
+import Contact from "./componenets/Contact"
 
 
 export default function App() {
