@@ -23,6 +23,14 @@ const dragElement = (containerId, toMoveId) => {
     document.addEventListener('mouseup', () => {
         dragged.removeEventListener('mousemove', drag)
     })
+
+    dragged.addEventListener('touchstart', () => {
+        dragged.addEventListener('touchmove', drag)
+    })
+
+    dragged.addEventListener('touchend', () => {
+        dragged.removeEventListener('touchmove', drag)
+    })
 }
 
 export { dragElement }

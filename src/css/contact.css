@@ -17,8 +17,14 @@
 }
 
 .contact:hover,
-.contact:focus {
+.contact:focus,
+.contact-icon:hover,
+.contact-icon:focus {
     animation-play-state: paused;
+}
+
+.contact-icon:hover,
+.contact-icon:focus {
     background-color: rgba(73, 181, 104, .8);
     filter: blur(1px);
 }
