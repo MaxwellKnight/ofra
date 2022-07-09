@@ -3,7 +3,7 @@
     height: 180px;
     border-radius: 6px;
     font-family: inherit;
-    font-weight: 500;
+    font-weight: 700;
     padding: 1rem;
     text-align: right;
     letter-spacing: 1px;
@@ -29,6 +29,8 @@
     border: none;
     text-align: right;
     padding: .2rem .5rem;
+    letter-spacing: 2px;
+    font-weight: 300;
 }
 
 .contact-form button {

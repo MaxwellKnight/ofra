@@ -8,6 +8,7 @@ const dragElement = (containerId, toMoveId) => {
     let dragged = document.getElementById(toMoveId)
 
     const drag = ({ movementX, movementY }) => {
+        dragged.style.cursor = 'grabbing'
         let styles = getComputedStyle(container) // get the container styles
         let left = parseInt(styles.left)
         let top = parseInt(styles.top)
@@ -17,10 +18,12 @@ const dragElement = (containerId, toMoveId) => {
     }
 
     dragged.addEventListener('mousedown', () => {
-        dragged.addEventListener('mousemove', drag)
+        dragged.style.cursor = 'grab'
+        return dragged.addEventListener('mousemove', drag)
     })
 
     document.addEventListener('mouseup', () => {
+        dragged.style.cursor = 'pointer'
         dragged.removeEventListener('mousemove', drag)
     })
 
