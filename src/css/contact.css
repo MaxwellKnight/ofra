@@ -30,12 +30,16 @@
 }
 
 .contact-icon {
-    font-size: 2em;
+    font-size: 1.8em;
 }
 
 @media (min-width: 675px) {
     .contact {
         position: fixed;
         right: 1rem;
+    }
+
+    .contact-icon {
+        font-size: 2em;
     }
 }
