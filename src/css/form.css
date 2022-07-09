@@ -15,9 +15,25 @@
 }
 
 .contact-form input,
-.contact-form button {
+.contact-form button,
+.contact-form textarea {
     border-radius: 6px;
     margin: .2rem 0;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+}
+
+.contact-form textarea {
+    height: 50px;
+    resize: none;
+    font-family: inherit;
+    text-align: right;
+    padding: .5rem;
+    font-size: .7rem;
+    color: rgba(0, 0, 0, .5)
 }
 
 .contact-form input {

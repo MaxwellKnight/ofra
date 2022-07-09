@@ -10,6 +10,8 @@ const Form = () => {
                 <input id='name' type='text' placeholder='ישראל ישראלי' />
                 <label for='phone' type='phone'>מס' נייד</label>
                 <input id='phone' type='phone' placeholder='053-123-4567' />
+                <label for='notes'>הערות</label>
+                <textarea id='notes' type='textarea'>לדוגמא: פנייה בנושא ליווי מורות</textarea>
                 <button type='submit'>שלח/י</button>
             </form>
         </div>

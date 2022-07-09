@@ -72,8 +72,8 @@ h3 {
 }
 
 .main-image {
-    max-height: 500px;
-    object-fit: cover;
+    max-height: 400px;
+    object-fit: contain;
     border-radius: 3px;
     margin-top: 1rem;
 }
