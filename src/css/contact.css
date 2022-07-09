@@ -5,15 +5,18 @@
     top: 0;
     right: 5rem;
     margin-top: .9rem;
-    background-color: rgba(73, 181, 104);
+    background-color: var(--dark-primary);
     filter: blur(0);
     color: #FFFF;
     padding: 1rem;
     border-radius: 50%;
+    transform: scale(1);
     animation: float 4s infinite;
     z-index: 10000000;
     cursor: pointer;
-    transition: box-shadow .2s ease, filter .2s ease, background-color .3s ease;
+    transition: box-shadow .2s ease,
+        filter .2s ease,
+        background-color .3s ease,
 }
 
 .contact:hover,
@@ -25,7 +28,6 @@
 
 .contact-icon:hover,
 .contact-icon:focus {
-    background-color: rgba(73, 181, 104, .8);
     filter: blur(1px);
 }
 

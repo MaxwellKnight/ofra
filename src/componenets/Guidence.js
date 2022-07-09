@@ -4,7 +4,7 @@ import '../css/guidence.css'
 const Guidence = () => {
     return (
         <div className='guidence'>
-            <h1><span className='bold'>עוצמ״א</span> - ערכים לצמיחה עצמית</h1>
+            <h1><span className='bold'>עוצמ״א</span>ערכים לצמיחה עצמית</h1>
 
             <div className='alert'>
                 <p className='alert-text'>

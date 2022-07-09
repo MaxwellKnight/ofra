@@ -8,7 +8,7 @@
     letter-spacing: 1px;
     position: absolute;
     right: 5px;
-    background-color: rgba(73, 181, 104);
+    background-color: var(--dark-primary);
     transform: translateY(-10px);
     animation: reveal .5s ease;
     z-index: -1;

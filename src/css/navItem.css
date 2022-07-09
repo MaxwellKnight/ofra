@@ -21,7 +21,6 @@
 
 .item-title {
     font-size: 1.5rem;
-    text-decoration: underline;
 }
 
 .item-main-text {
@@ -36,6 +35,8 @@
 }
 
 .item-list li:first-child {
+    width: fit-content;
+    margin: 0 auto;
     font-weight: 700;
     letter-spacing: 3px;
     border-bottom: 1px solid #e2e2e2;

@@ -21,10 +21,10 @@ h1 {
 }
 
 body {
-  font-family: 'Rubik';
+  font-family: 'Rubik', sans-serif;
   font-weight: 300;
   font-size: 16px;
-  background-color: #eee;
+  background-color: #fff3eb;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }

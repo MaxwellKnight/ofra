@@ -5,7 +5,7 @@
 
 /* ====== CLOUD LAYOUT SETTINGS ==========*/
 .cloud {
-    background-color: #FFFF;
+    background-color: var(--light-secondary);
     width: 200px;
     height: 80px;
     padding: 1rem;
@@ -21,7 +21,7 @@
 
 .cloud::after {
     content: '';
-    background-color: #FFFF;
+    background-color: var(--light-secondary);
     position: absolute;
     width: 80px;
     height: 80px;
@@ -33,7 +33,7 @@
 
 .cloud::before {
     content: '';
-    background-color: #FFFF;
+    background-color: var(--light-secondary);
     position: absolute;
     width: 120px;
     height: 100px;
@@ -72,7 +72,7 @@
 .hidden {
     width: 300px;
     position: absolute;
-    background-color: #FFFF;
+    background-color: var(--light-secondary);
     padding: .5rem;
     transform: translatex(800px);
     opacity: 0;
@@ -82,7 +82,7 @@
 
 .expend {
     transform: translatex(0);
-    box-shadow: 1px 1px 10px #FFFF;
+    box-shadow: 1px 1px 10px rgba(255, 255, 255, .2);
     border: 1px solid var(--light-primary);
     opacity: 1;
     cursor: pointer;

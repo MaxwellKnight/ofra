@@ -1,4 +1,4 @@
-h1 {
+.guidence h1 {
     font-size: 1.4rem;
     padding-top: .5em;
 }
@@ -30,6 +30,7 @@ h1 {
 
 .bold {
     font-size: 2.5rem;
+    display: block;
 }
 
 
@@ -40,7 +41,7 @@ h1 {
 }
 
 .alert-text {
-    border: 1px solid #e2e2e2;
+    border: 1px solid var(--brown);
     padding: 1rem 2rem;
     margin: 1rem 0;
     border-radius: 6px;

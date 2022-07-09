@@ -5,12 +5,11 @@
 
 :root {
     /* creating variables for convinence */
-    --light-primary: #B9E6FF;
-    --dark-primary: #5C95FF;
-    --dark-secondary: #F87575;
-    --light-secondary: #FFA9A3;
-    --brown: #7E6C6C;
-    --text-color: #393939;
+    --light-primary: #78b0b0;
+    --dark-primary: #547b7b;
+    --light-secondary: #fff3eb;
+    --brown: #B08B78;
+    --text-color: #7b6454;
 }
 
 img {
@@ -24,7 +23,7 @@ img {
     height: 70px;
     width: 100%;
     background-color: var(--light-primary);
-    box-shadow: 1px 1px 15px rgba(0, 0, 0, .1);
+    box-shadow: 1px 1px 15px rgba(0, 0, 0, .2);
     position: fixed;
     z-index: 1000;
 }
@@ -35,6 +34,7 @@ img {
     order: 1;
     cursor: pointer;
     transition: all .2s ease-in-out;
+    opacity: .5;
 }
 
 .slideout {
@@ -64,15 +64,13 @@ img {
 .navigation-item {
     transition: color .1s ease-in-out,
         background-color .1s ease-in-out,
-        font-weight .1s ease-in-out;
 }
 
 .navigation-item:hover,
 .navigation-item:focus {
     background-color: var(--dark-primary);
-    color: #FFFF;
+    color: var(--light-secondary);
     cursor: pointer;
-    font-weight: 700;
 }
 
 /* when the viewport reaches minimum of 675px
@@ -86,6 +84,7 @@ img {
     }
 
     .navigation {
+        color: #254545;
         min-height: 100vh;
         flex-direction: column;
         width: 20%;
@@ -100,7 +99,7 @@ img {
         padding: 1.2em;
         list-style: none;
         width: 100%;
-        font-weight: 400;
+        font-weight: 700;
     }
 
     @media (max-width: 1000px) {
@@ -113,6 +112,7 @@ img {
         width: 50%;
         aspect-ratio: 1;
         order: -1;
+
     }
 
     .navigation-list {
@@ -128,7 +128,6 @@ img {
 .nav-item-wrapper {
     width: 100%;
     height: 100vh;
-    background-color: #FFF;
 }
 
 .nav-list-mobile {
@@ -145,12 +144,14 @@ img {
 }
 
 .nav-item-mobile {
+    color: var(--dark-primary);
     display: block;
     width: 100%;
     margin: 0 auto;
     padding: 1rem;
     cursor: pointer;
     font-size: 1.2rem;
+    font-weight: 700;
     transition: color .1s ease-in-out, background-color .1s ease-in-out;
 }
 
@@ -161,7 +162,7 @@ img {
 .nav-item-mobile:hover,
 .nav-item-mobile:focus {
     background-color: var(--dark-primary);
-    color: #FFFF;
+    color: var(--light-secondary);
     cursor: pointer;
 }
 
@@ -173,6 +174,7 @@ img {
     top: 1rem;
     left: 1rem;
     cursor: pointer;
+    color: var(--light-secondary);
     transition: all 0.3s ease-in-out;
 }
 

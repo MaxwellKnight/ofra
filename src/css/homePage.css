@@ -2,7 +2,7 @@ h1,
 h2,
 h3,
 h4 {
-    color: var(--brown)
+    color: var(--text-color)
 }
 
 h3 {
@@ -67,7 +67,7 @@ h3 {
     flex-direction: column;
     flex-wrap: wrap;
     justify-content: space-between;
-    background: linear-gradient(to bottom, #eee, var(--light-primary));
+    background: linear-gradient(to bottom, var(--light-secondary), var(--brown));
     overflow: hidden;
 }
 
