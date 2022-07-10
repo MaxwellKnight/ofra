@@ -2,12 +2,16 @@ h1,
 h2,
 h3,
 h4 {
-    color: var(--text-color)
+    color: var(--dark-primary)
 }
 
 h3 {
     letter-spacing: .5rem;
     font-family: 'Open Sans', sans-serif;
+}
+
+.cloud-p {
+    letter-spacing: 1px;
 }
 
 .main-text {
