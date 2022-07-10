@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/ofra/static/css/main.b68ed728.css",
+    "main.css": "/ofra/static/css/main.222452a4.css",
     "main.js": "/ofra/static/js/main.1efd1943.js",
     "static/media/bg-cover.png": "/ofra/static/media/bg-cover.2662984cc7eb4149e57b.png",
     "static/media/book-1.jpeg": "/ofra/static/media/book-1.7db31e7e40ab229858a0.jpeg",
@@ -14,11 +14,11 @@
     "static/media/book-5.jpeg": "/ofra/static/media/book-5.bcb4374a45c8927bbda6.jpeg",
     "static/media/book-7.jpeg": "/ofra/static/media/book-7.6edec7dd72e5aaa01758.jpeg",
     "index.html": "/ofra/index.html",
-    "main.b68ed728.css.map": "/ofra/static/css/main.b68ed728.css.map",
+    "main.222452a4.css.map": "/ofra/static/css/main.222452a4.css.map",
     "main.1efd1943.js.map": "/ofra/static/js/main.1efd1943.js.map"
   },
   "entrypoints": [
-    "static/css/main.b68ed728.css",
+    "static/css/main.222452a4.css",
     "static/js/main.1efd1943.js"
   ]
 }
