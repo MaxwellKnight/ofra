@@ -10,7 +10,7 @@ const Homepage = () => {
         <main className="main-content" dir="rtl">
             <section className="main-hero">
                 <img src={backgroundImage} alt="" className="main-image" />
-                {/* <h2 className="main-title">דף הבית</h2> */}
+                <h2 className="main-title">דף הבית</h2>
                 <p className="main-text">המיפגשים שלי עם אנשים בקבוצה וגם עם האדם, שאותו אני מלווה באופן פרטני,
                     ממחישים לי כל פעם מחדש את הכוח של נתינה וקבלה בתוך מרחב
                     של תנועה, שיח והקשבה - בו מגלה כל אחד את זכות הבחירה, כדי

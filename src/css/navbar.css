@@ -138,13 +138,13 @@ img {
     display: flex;
     flex-direction: column;
     padding-top: 5rem;
+    color: #254545;
     background-color: var(--light-primary);
     text-align: center;
     animation: slidein .3s ease-in-out;
 }
 
 .nav-item-mobile {
-    color: var(--dark-primary);
     display: block;
     width: 100%;
     margin: 0 auto;

@@ -24,6 +24,7 @@
 .contact-form input,
 .contact-form textarea {
     width: 100%;
+    background-color: var(--light-secondary);
 }
 
 .contact-form textarea {
@@ -53,7 +54,9 @@
     padding: .5rem 2rem;
     width: 100%;
     transform: scale(1);
+    background-color: var(--light-primary);
     transition: transform .2s ease-in-out;
+    color: rgba(0, 0, 0, .5)
 }
 
 .contact-form button:hover,
