@@ -7,7 +7,7 @@ const Form = () => {
             <form action='#'>
 
                 <label for='name'>שם</label>
-                <input id='name' type='text' placeholder='ישראל ישראלי' />
+                <input id='name' type='text' placeholder='דור ישראלי' />
                 <label for='phone' type='phone'>מס' נייד</label>
                 <input id='phone' type='phone' placeholder='053-123-4567' />
                 <label for='notes'>הערות</label>

@@ -15,7 +15,6 @@
     z-index: 10000000;
     cursor: pointer;
     transition: box-shadow .2s ease,
-        filter .2s ease,
         background-color .3s ease,
 }
 
@@ -33,6 +32,7 @@
 
 .contact-icon {
     font-size: 1.8em;
+    transition: filter .2s ease;
 }
 
 @media (min-width: 675px) {
