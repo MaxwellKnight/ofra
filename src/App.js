@@ -11,7 +11,7 @@ export default function App() {
 
   const [isHome, changeIsHome] = useState(true)
   const [id, changeId] = useState(1)
-  const { data } = require('./data')
+  const { data } = require('./data/data')
 
   function toggleIsHome(isVisible, id) {
     changeIsHome(isVisible)

@@ -14,9 +14,12 @@ const Navbar = props => {
 
     return (
         <nav className="navigation">
-            <img className="navigation-logo" src={require('../images/mandala.png')} alt="logo" onClick={() => {
-                return toggle(true)
-            }} />
+            <img
+                className="navigation-logo"
+                src={require('../images/mandala.png')}
+                alt="logo" onClick={() => toggle(true)}
+            />
+
             {printNav(toggleIsMobile, isMobile, toggle, changeIsMobile, data)}
         </nav>
     )

@@ -1,7 +1,7 @@
 exports.books = [
     {
         id: 1,
-        coverImage: require("./images/book-1.jpeg"),
+        coverImage: require("../images/book-1.jpeg"),
         title: "לתת מכל הלב",
         dateReleased: "01-02-2020",
         summary: `הספרים נכתבו עבור צעירים וצעירים ברוחם, מעוררים השראה ומעבירים
@@ -14,7 +14,7 @@ exports.books = [
     },
     {
         id: 2,
-        coverImage: require("./images/book-2.jpeg"),
+        coverImage: require("../images/book-2.jpeg"),
         title: "משאלה ירוקה",
         dateReleased: "19-07-2014",
         summary: "",
@@ -22,7 +22,7 @@ exports.books = [
     },
     {
         id: 3,
-        coverImage: require("./images/book-3.jpeg"),
+        coverImage: require("../images/book-3.jpeg"),
         title: "ואהבת לרעך כמוך",
         dateReleased: "08-01-2003",
         summary: "",
@@ -30,7 +30,7 @@ exports.books = [
     },
     {
         id: 4,
-        coverImage: require("./images/book-4.jpeg"),
+        coverImage: require("../images/book-4.jpeg"),
         title: "כולנו בני אדם, שונים אך גם דומים",
         dateReleased: "09-12-1998",
         summary: "",
@@ -38,7 +38,7 @@ exports.books = [
     },
     {
         id: 5,
-        coverImage: require("./images/book-5.jpeg"),
+        coverImage: require("../images/book-5.jpeg"),
         title: "שערים והרהורים",
         dateReleased: "11-12-2007",
         summary: "",
@@ -46,7 +46,7 @@ exports.books = [
     },
     {
         id: 6,
-        coverImage: require("./images/book-6.jpeg"),
+        coverImage: require("../images/book-6.jpeg"),
         title: "נשימה.",
         dateReleased: "06-06-2008",
         summary: "",
@@ -54,7 +54,7 @@ exports.books = [
     },
     {
         id: 7,
-        coverImage: require("./images/book-7.jpeg"),
+        coverImage: require("../images/book-7.jpeg"),
         title: "כל יום דף מחדש",
         dateReleased: "01-01-2001",
         summary: "",
@@ -62,7 +62,7 @@ exports.books = [
     },
     {
         id: 8,
-        coverImage: require("./images/book-8.jpeg"),
+        coverImage: require("../images/book-8.jpeg"),
         title: "אדם-אדמה, שמים-מים ומה שבינהם.",
         dateReleased: "02-02-2002",
         summary: "",

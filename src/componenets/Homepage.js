@@ -1,6 +1,6 @@
 import '../css/homePage.css'
-import Cloud from "./Cloud"
-import { clouds } from '../clouds'
+import { clouds } from '../data/clouds'
+import { printClouds } from '../utils/print'
 
 const backgroundImage = require('../images/bg-cover.png')
 
@@ -28,9 +28,7 @@ const Homepage = () => {
                 <p><strong className='cloud-p'>*כדי לקרוא לחצ/י על הענן</strong></p>
                 <div className='clouds-only-container'>
                     <div className="clouds"> {/* Printing all the clouds with quotes */}
-                        {clouds.map(cloud => {
-                            return <Cloud key={cloud.id} sentence={cloud.content} id={cloud.id} />
-                        })}
+                        {printClouds(clouds)}
                     </div>
                 </div>
             </section>
