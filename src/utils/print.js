@@ -106,5 +106,22 @@ const printClouds = (clouds) => {
 }
 
 
+// ============================================================================================
+const printGallery = images => {
+    return (
+        <>
+            {images.map((image, index) => {
+                return (
+                    <img src={image}
+                        className={`gallery-item img${index + 1}`}
+                        style={{ animation: `slidein ${index * .2}s ease-in-out` }}
+                        alt='moments from session and activities'
+                    />
+                )
+            })}
+        </>
+    )
+}
 
-export { printNav, printNavItem, printBooks, printClouds }
+
+export { printNav, printNavItem, printBooks, printClouds, printGallery }
