@@ -1,11 +1,23 @@
 {
   "files": {
-    "main.css": "/ofra/static/css/main.bb04d539.css",
-    "main.js": "/ofra/static/js/main.7e6e1c95.js",
+    "main.css": "/ofra/static/css/main.e479b73b.css",
+    "main.js": "/ofra/static/js/main.c288ee78.js",
     "static/media/bg-cover.png": "/ofra/static/media/bg-cover.2662984cc7eb4149e57b.png",
+    "static/media/img9.JPG": "/ofra/static/media/img9.24bae71a80e3e81905e8.JPG",
+    "static/media/img8.JPG": "/ofra/static/media/img8.824dcbb66ed8a2577565.JPG",
+    "static/media/img12.JPG": "/ofra/static/media/img12.bff1492e477fca953969.JPG",
     "static/media/book-1.jpeg": "/ofra/static/media/book-1.7db31e7e40ab229858a0.jpeg",
+    "static/media/img6.JPG": "/ofra/static/media/img6.c0882cf0cf23be5862c8.JPG",
     "static/media/book-6.jpeg": "/ofra/static/media/book-6.0d7c61eee026d8d8793d.jpeg",
     "static/media/book-8.jpeg": "/ofra/static/media/book-8.db89a782551d3f33e145.jpeg",
+    "static/media/img3.JPG": "/ofra/static/media/img3.50852bebfb36ea9b4c4c.JPG",
+    "static/media/img10.JPG": "/ofra/static/media/img10.b798d27a62bcb7e17bfc.JPG",
+    "static/media/img4.JPG": "/ofra/static/media/img4.c9d4a5e518d6c7479261.JPG",
+    "static/media/img11.JPG": "/ofra/static/media/img11.1684f75d023924352b32.JPG",
+    "static/media/img5.JPG": "/ofra/static/media/img5.1db9b0aef845aff84665.JPG",
+    "static/media/img1.JPG": "/ofra/static/media/img1.95c4a27fb0b20aa51d67.JPG",
+    "static/media/img7.JPG": "/ofra/static/media/img7.b8b8b81f3c035ed1f047.JPG",
+    "static/media/img2.JPG": "/ofra/static/media/img2.cf9cd43e7d556c10212e.JPG",
     "static/media/book-2.jpeg": "/ofra/static/media/book-2.5487461e5eadbc96b7da.jpeg",
     "static/media/mandala.png": "/ofra/static/media/mandala.24d656bd3ed39489c70d.png",
     "static/media/book-3.jpeg": "/ofra/static/media/book-3.d265fccdba026177144b.jpeg",
@@ -14,11 +26,11 @@
     "static/media/book-5.jpeg": "/ofra/static/media/book-5.bcb4374a45c8927bbda6.jpeg",
     "static/media/book-7.jpeg": "/ofra/static/media/book-7.6edec7dd72e5aaa01758.jpeg",
     "index.html": "/ofra/index.html",
-    "main.bb04d539.css.map": "/ofra/static/css/main.bb04d539.css.map",
-    "main.7e6e1c95.js.map": "/ofra/static/js/main.7e6e1c95.js.map"
+    "main.e479b73b.css.map": "/ofra/static/css/main.e479b73b.css.map",
+    "main.c288ee78.js.map": "/ofra/static/js/main.c288ee78.js.map"
   },
   "entrypoints": [
-    "static/css/main.bb04d539.css",
-    "static/js/main.7e6e1c95.js"
+    "static/css/main.e479b73b.css",
+    "static/js/main.c288ee78.js"
   ]
 }

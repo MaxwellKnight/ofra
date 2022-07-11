@@ -95,7 +95,7 @@ const printBooks = (books, category, handleCurrentBook) => {
 
 
 // ============================================================================================
-const printClouds = (clouds) => {
+const printClouds = clouds => {
     return (
         <>
             {clouds.map(cloud => {

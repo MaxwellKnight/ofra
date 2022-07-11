@@ -1,11 +1,11 @@
 import React, { useState } from "react"
-
 import Navbar from './componenets/Navbar'
-import Homepage from "./componenets/Homepage"
-import './App.css'
-import NavItem from "./componenets/NavItem"
 import Contact from "./componenets/Contact"
+import Spinner from "./componenets/Spinner"
+import './App.css'
 
+const Homepage = React.lazy(() => import("./componenets/Homepage"))
+const NavItem = React.lazy(() => import("./componenets/NavItem"))
 
 export default function App() {
 
@@ -13,7 +13,7 @@ export default function App() {
   const [id, changeId] = useState(1)
   const { data } = require('./data/data')
 
-  function toggleIsHome(isVisible, id) {
+  const toggleIsHome = (isVisible, id) => {
     changeIsHome(isVisible)
     changeId(id)
   }
@@ -23,8 +23,10 @@ export default function App() {
       <Contact />
       <Navbar data={data} toggle={toggleIsHome} />
       <div className="container">
-        {/* Check if the user  returned to the hompage or navigated to a different section */}
-        {isHome ? <Homepage data={data} toggle={toggleIsHome} /> : <NavItem data={data[id]} toggle={toggleIsHome} />}
+        <React.Suspense fallback={<Spinner />}>
+          {/* Check if the user  returned to the hompage or navigated to a different section */}
+          {isHome ? <Homepage data={data} toggle={toggleIsHome} /> : <NavItem data={data[id]} toggle={toggleIsHome} />}
+        </React.Suspense>
       </div>
     </>
   );
