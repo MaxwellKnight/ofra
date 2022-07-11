@@ -13,6 +13,7 @@ import Cloud from "../componenets/Cloud"
      * to mobile/desktop
      */
 const printNav = (toggleIsMobile, isMobile, toggle, changeIsMobile, data) => {
+
     return (
         <>
             <FontAwesomeIcon onClick={toggleIsMobile} className="navigation-bar" icon={faBars} />
@@ -112,7 +113,8 @@ const printGallery = images => {
         <>
             {images.map((image, index) => {
                 return (
-                    <img src={image}
+                    <img key={index}
+                        src={image}
                         className={`gallery-item img${index + 1}`}
                         style={{ animation: `slidein ${index * .2}s ease-in-out` }}
                         alt='moments from session and activities'
