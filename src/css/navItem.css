@@ -29,7 +29,7 @@
 }
 
 .item-list {
-    width: fit-content;
+    width: 70%;
     margin: 0 auto;
     list-style-type: none;
 }

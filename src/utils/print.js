@@ -48,7 +48,7 @@ const printNavItem = (separateComponents, data) => {
     const printList = list => {
         return (
             <ul className="item-list">
-                {list.map((item, index) => <li key={index}>{item}</li>)}
+                {list.map((item, index) => <li key={index} style={applyLinearSlide(index)}>{item}</li>)}
             </ul>
         )
     }
