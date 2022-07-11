@@ -1,10 +1,10 @@
 {
   "files": {
     "main.css": "/ofra/static/css/main.6a932164.css",
-    "main.js": "/ofra/static/js/main.1a56cadb.js",
+    "main.js": "/ofra/static/js/main.fe366e07.js",
     "static/css/745.a12c6654.chunk.css": "/ofra/static/css/745.a12c6654.chunk.css",
     "static/js/745.05120141.chunk.js": "/ofra/static/js/745.05120141.chunk.js",
-    "static/css/593.35d07c73.chunk.css": "/ofra/static/css/593.35d07c73.chunk.css",
+    "static/css/593.706ccc33.chunk.css": "/ofra/static/css/593.706ccc33.chunk.css",
     "static/js/593.7fd6b262.chunk.js": "/ofra/static/js/593.7fd6b262.chunk.js",
     "static/media/bg-cover.png": "/ofra/static/media/bg-cover.2662984cc7eb4149e57b.png",
     "static/media/img9.JPG": "/ofra/static/media/img9.24bae71a80e3e81905e8.JPG",
@@ -31,14 +31,14 @@
     "static/media/book-7.jpeg": "/ofra/static/media/book-7.6edec7dd72e5aaa01758.jpeg",
     "index.html": "/ofra/index.html",
     "main.6a932164.css.map": "/ofra/static/css/main.6a932164.css.map",
-    "main.1a56cadb.js.map": "/ofra/static/js/main.1a56cadb.js.map",
+    "main.fe366e07.js.map": "/ofra/static/js/main.fe366e07.js.map",
     "745.a12c6654.chunk.css.map": "/ofra/static/css/745.a12c6654.chunk.css.map",
     "745.05120141.chunk.js.map": "/ofra/static/js/745.05120141.chunk.js.map",
-    "593.35d07c73.chunk.css.map": "/ofra/static/css/593.35d07c73.chunk.css.map",
+    "593.706ccc33.chunk.css.map": "/ofra/static/css/593.706ccc33.chunk.css.map",
     "593.7fd6b262.chunk.js.map": "/ofra/static/js/593.7fd6b262.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.6a932164.css",
-    "static/js/main.1a56cadb.js"
+    "static/js/main.fe366e07.js"
   ]
 }
