@@ -36,4 +36,8 @@ const dragElement = (containerId, toMoveId) => {
     })
 }
 
-export { dragElement }
+const applyLinearSlide = interval => {
+    return { animation: `slidein ${interval * .3}s ease-in-out` }
+}
+
+export { dragElement, applyLinearSlide }

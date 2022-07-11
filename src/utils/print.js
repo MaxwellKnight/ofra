@@ -7,6 +7,7 @@ import Books from "../componenets/Books"
 import About from "../componenets/About"
 import Concepts from "../componenets/Concepts"
 import Cloud from "../componenets/Cloud"
+import { applyLinearSlide } from "./animations"
 
 /**
      * printNav is responsible for printing the navigation in relation
@@ -86,7 +87,7 @@ const printBooks = (books, category, handleCurrentBook) => {
                     <img className='book-image'
                         src={require('../images/placeholder.jpeg')}
                         alt="cover of the book"
-                        style={{ animation: `slidein ${book.id * .5}s ease` }}
+                        style={applyLinearSlide(book.id)}
                         onClick={() => handleCurrentBook(book.id)} />
                 </div>
             )
@@ -116,7 +117,7 @@ const printGallery = images => {
                     <img key={index}
                         src={image}
                         className={`gallery-item img${index + 1}`}
-                        style={{ animation: `slidein ${index * .2}s ease-in-out` }}
+                        style={applyLinearSlide(index * 0.5)}
                         alt='moments from session and activities'
                     />
                 )
