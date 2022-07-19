@@ -1,12 +1,14 @@
 import { React, useState } from 'react'
 import booksData from '../data/books'
 import '../css/books.css'
-import Book from './Book';
+import Modal from './Modal';
 import { printBooks } from '../utils/print';
 
 const Books = () => {
     const { books } = booksData;
     const [currentBook, updateCurrentBook] = useState(0);
+    const book = books.find(book => book.id === currentBook)
+
 
     const handleCurrentBook = id => {
         updateCurrentBook(id)
@@ -14,7 +16,7 @@ const Books = () => {
 
     return (
         <main className="books">
-            {currentBook ? <Book book={books.find(book => book.id === currentBook)} handleCurrentBook={handleCurrentBook} /> : ''}
+            {currentBook ? <Modal itemTitle={book.title} itemDesc={book.summary} path={book.coverImage} handleCurrentItem={handleCurrentBook} /> : ''}
             <h1 className='books-section-title'>ספרים לצעירים ולצעירים ברוחם</h1>
             <div className='book-wrapper'>
                 {printBooks(books, 'children', handleCurrentBook)}

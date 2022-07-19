@@ -12,7 +12,9 @@ const Cloud = props => {
 
     return (
         <div className='cloud-container' onClick={handleCloudClick}>
-            <div id={`cloud${id}`} className='hidden'>{`"${sentence}"`}</div>
+            <div id={`cloud${id}`} className='hidden'>
+                {sentence}
+            </div>
             <div className='cloud'>
                 <div className='cloud-text-wrapper'>
                     <p className='cloud-text'>{`${sentence}`}</p>

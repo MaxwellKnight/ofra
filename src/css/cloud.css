@@ -71,23 +71,21 @@
 
 /* =========== POP-UP ANIMATION SETTINGS ========== */
 .hidden {
-    width: 300px;
     position: absolute;
     background-color: var(--light-secondary);
     padding: .5rem;
+    border: 1px solid var(--light-primary);
+    box-shadow: 1px 1px 10px rgba(255, 255, 255, .2);
     transform: translatex(800px);
     opacity: 0;
-    transition: transform .2s ease-in-out, opacity .3s ease-in-out;
+    cursor: pointer;
     z-index: 1;
+    transition: transform .2s ease-in-out, opacity .3s ease-in-out;
 }
 
 .expend {
     transform: translatex(0);
-    box-shadow: 1px 1px 10px rgba(255, 255, 255, .2);
-    border: 1px solid var(--light-primary);
     opacity: 1;
-    cursor: pointer;
-    z-index: 1;
 }
 
 /* ================================================== */

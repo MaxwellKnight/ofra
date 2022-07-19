@@ -109,16 +109,17 @@ const printClouds = clouds => {
 
 
 // ============================================================================================
-const printGallery = images => {
+const printGallery = (images, handleCurrentImage) => {
     return (
         <>
             {images.map((image, index) => {
                 return (
-                    <img key={index}
-                        src={image}
+                    <img key={image.id}
+                        src={image.path}
                         className={`gallery-item img${index + 1}`}
                         style={applyLinearSlide(index * 0.5)}
                         alt='moments from session and activities'
+                        onClick={() => handleCurrentImage(image.id)}
                     />
                 )
             })}
