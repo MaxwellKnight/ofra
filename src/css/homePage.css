@@ -1,7 +1,6 @@
 h1,
 h2,
-h3,
-h4 {
+h3 {
     color: var(--dark-primary)
 }
 
@@ -73,7 +72,7 @@ h3 {
     justify-content: space-between;
     background: linear-gradient(to bottom, var(--light-secondary), var(--brown));
     overflow: hidden;
-    padding-top: 7rem;
+    /* padding-top: 7rem; */
 }
 
 .main-image {

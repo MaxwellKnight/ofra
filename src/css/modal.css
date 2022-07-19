@@ -1,3 +1,13 @@
+.modal-title {
+    color: var(--light-secondary);
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.modal-summary {
+    font-size: 1rem;
+}
+
 .modal-container {
     position: fixed;
     top: 0;
@@ -18,9 +28,6 @@
 
 .modal-cover-image {
     max-width: 70%;
-}
-
-.modal-cover-image {
     margin-bottom: 2rem;
     border-radius: 6px;
 }

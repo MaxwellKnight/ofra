@@ -20,6 +20,7 @@
 }
 
 .item-title {
+    color: var(--dark-primary);
     font-size: 1.5rem;
 }
 

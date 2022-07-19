@@ -9,7 +9,7 @@ const Modal = props => {
 
     return (
         <div className='modal-container'>
-            <h2>{itemTitle}</h2>
+            <h2 className='modal-title'>{itemTitle}</h2>
             <FontAwesomeIcon className='close' icon={faWindowClose} onClick={() => handleCurrentItem(0)} />
             {itemTitle ? <img className='modal-cover-image' src={path} alt='book' /> :
                 <img className='modal-full-screen' src={path} alt='book' />}
