@@ -5,6 +5,8 @@ const backgroundImage = require('../images/background.png')
 
 const Homepage = () => {
 
+    console.log('Homepage')
+
     return (
         <main className="main-content" dir="rtl">
             <section className="main-hero">
