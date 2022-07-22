@@ -36,7 +36,7 @@ const printNav = (toggleIsMobile, isMobile, toggle, changeIsMobile, data) => {
                             }}
                         >{item.title}</li>
                     )
-                })}
+                })} 
             </ul>
         </>
     )
