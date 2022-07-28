@@ -79,7 +79,7 @@ exports.data = [
     },
     {
         id: 8,
-        title: 'גלריה',
+        title: 'הגלריה שלי - כיוצרת רב תחומית',
         mainText: ''
     }
 ]

@@ -1,3 +1,8 @@
+.participant {
+    font-weight: 700;
+    color: var(--brown);
+}
+
 .container {
     background: none;
 }

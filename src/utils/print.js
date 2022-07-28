@@ -36,7 +36,7 @@ const printNav = (toggleIsMobile, isMobile, toggle, changeIsMobile, data) => {
                             }}
                         >{item.title}</li>
                     )
-                })} 
+                })}
             </ul>
         </>
     )
@@ -69,7 +69,13 @@ const printNavItem = (separateComponents, data) => {
     return (
         <>
             {/* This section checks whether the Item to display need special rendering  */}
-            {(!separateComponents.includes(data.id)) ? <h1 className="item-title">{data.title}</h1> : ""}
+            {
+                (!separateComponents.includes(data.id)) ?
+                    <>
+                        <h1 className="item-title">{data.title}</h1>
+                        <p className="participant">מס משתתפים מוגבל - בתיאום מראש.</p>
+                    </> : ""
+            }
             {(!separateComponents.includes(data.id)) ? <p id="main-text" className="item-main-text">{data.mainText}</p> : ""}
             {data.hasOwnProperty('list') ? printList(data.list) : ""}
             {itemToDisplay()}
@@ -85,7 +91,7 @@ const printBooks = (books, category, handleCurrentBook) => {
                 <div className='book' key={book.dateReleased}>
                     <h4 className='book-title'>{book.title}</h4>
                     <img className='book-image'
-                        src={book.coverImage}
+                        src={require('../images/placeholder.jpeg')}
                         alt="cover of the book"
                         style={applyLinearSlide(book.id)}
                         onClick={() => handleCurrentBook(book.id)} />
