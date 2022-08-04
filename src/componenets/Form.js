@@ -1,22 +1,70 @@
-import React from 'react'
+import React, { useState } from 'react'
 import '../css/form.css'
 
 const Form = () => {
+
+    const [formData, setFormData] = useState({
+        fullName: '',
+        email: '',
+        phone: '',
+        notes: 'לדוגמא: פנייה בנושא ליווי מורות'
+    })
+
+    const handleFormData = event => {
+        const name = event.target.name
+        const value = event.target.value
+        setFormData(prevFormData => ({
+            ...prevFormData,
+            [name]: value
+        }))
+    }
+
     return (
         <div className='contact-form'>
             <form action='#'>
 
-                <label for='name'>שם</label>
-                <input id='name' type='text' placeholder='דור ישראלי' required />
+                <label htmlFor='name'>שם</label>
+                <input
+                    id='name'
+                    name='fullName'
+                    value={formData.fullName}
+                    type='text'
+                    placeholder='דור ישראלי'
+                    onChange={handleFormData}
+                    required
+                />
 
-                <label for='phone'>מס' נייד</label>
-                <input id='phone' type='phone' placeholder='053-123-4567' required />
+                <label htmlFor='phone'>מס' נייד</label>
+                <input
+                    id='phone'
+                    name='phone'
+                    value={formData.phone}
+                    type='phone'
+                    placeholder='053-123-4567'
+                    onChange={handleFormData}
+                    required
+                />
 
-                <label for='email'>דואר אלקטרוני</label>
-                <input id='email' type='email' placeholder='dor@gmail.com' required />
+                <label htmlFor='email'>דואר אלקטרוני</label>
+                <input
+                    id='email'
+                    name='email'
+                    value={formData.email}
+                    type='email'
+                    placeholder='dor@gmail.com'
+                    onChange={handleFormData}
+                    required
+                />
 
-                <label for='notes'>הערות</label>
-                <textarea id='notes' type='textarea' defaultValue='לדוגמא: פנייה בנושא ליווי מורות' required></textarea>
+                <label htmlFor='notes'>הערות</label>
+                <textarea
+                    id='notes'
+                    name='notes'
+                    value={formData.notes}
+                    type='textarea'
+                    onChange={handleFormData}
+                    required
+                ></textarea>
                 <button type='submit'>שלח/י</button>
             </form>
         </div>

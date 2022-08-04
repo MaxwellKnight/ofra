@@ -107,7 +107,16 @@ const printClouds = clouds => {
     return (
         <>
             {clouds.map(cloud => {
-                return <Cloud key={cloud.id} sentence={cloud.content} id={cloud.id} />
+                return (
+                    <Cloud
+                        key={cloud.id}
+                        header={cloud.header}
+                        sentence={cloud.content}
+                        contentList={cloud.contentList}
+                        cred={cloud.cred}
+                        id={cloud.id}
+                    />
+                )
             })}
         </>
     )

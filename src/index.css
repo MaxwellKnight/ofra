@@ -1,3 +1,11 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
 :root {
   /* creating variables for convinence */
   --light-primary: #78b0b0;
@@ -5,13 +13,7 @@
   --light-secondary: #fff3eb;
   --brown: #945f45;
   --text-color: #4b3b2e;
-}
-
-
-* {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
+  --color: #eba134;
 }
 
 #root {

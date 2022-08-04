@@ -1,11 +1,9 @@
 import '../css/homePage.css'
 import { printClouds } from '../utils/print'
 const { clouds } = require('../data/clouds.js')
-const backgroundImage = require('../images/background.png')
+const backgroundImage = require('../images/main-background.jpeg')
 
 const Homepage = () => {
-
-    console.log('Homepage')
 
     return (
         <main className="main-content" dir="rtl">

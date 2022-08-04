@@ -1,13 +1,9 @@
-.cloud-p {
-    font-size: 12px;
-    letter-spacing: 2px;
-}
-
 /* ====== CLOUD LAYOUT SETTINGS ==========*/
 .cloud {
-    background-color: var(--light-secondary);
+    background-color: var(--color);
     width: 200px;
     height: 80px;
+    font-size: .9rem;
     padding: 1rem;
     border-radius: 150px;
     box-shadow: 10px 10px rgba(0, 0, 0, 0.2);
@@ -21,7 +17,7 @@
 
 .cloud::after {
     content: '';
-    background-color: var(--light-secondary);
+    background-color: var(--color);
     position: absolute;
     width: 80px;
     height: 80px;
@@ -33,7 +29,7 @@
 
 .cloud::before {
     content: '';
-    background-color: var(--light-secondary);
+    background-color: var(--color);
     position: absolute;
     width: 120px;
     height: 100px;
@@ -89,6 +85,17 @@
 }
 
 /* ================================================== */
+
+.quote {
+    font-weight: 600;
+    margin: .5rem 0;
+}
+
+.ls-1 {
+    letter-spacing: 2px;
+    font-size: 1.1rem;
+    color: #000;
+}
 
 
 /* ================ MEDIA QUERIES ===================== */
