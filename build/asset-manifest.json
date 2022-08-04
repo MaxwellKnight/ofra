@@ -1,11 +1,12 @@
 {
   "files": {
-    "main.css": "/ofra/static/css/main.75878828.css",
-    "main.js": "/ofra/static/js/main.79b67f2f.js",
-    "static/css/745.83b9131b.chunk.css": "/ofra/static/css/745.83b9131b.chunk.css",
-    "static/js/745.2832797b.chunk.js": "/ofra/static/js/745.2832797b.chunk.js",
+    "main.css": "/ofra/static/css/main.1dafee46.css",
+    "main.js": "/ofra/static/js/main.e90be2a8.js",
+    "static/css/745.36713273.chunk.css": "/ofra/static/css/745.36713273.chunk.css",
+    "static/js/745.ca8c5e03.chunk.js": "/ofra/static/js/745.ca8c5e03.chunk.js",
     "static/css/593.75f132a7.chunk.css": "/ofra/static/css/593.75f132a7.chunk.css",
     "static/js/593.4e56ed92.chunk.js": "/ofra/static/js/593.4e56ed92.chunk.js",
+    "static/media/main-background.jpeg": "/ofra/static/media/main-background.822af896e9dbd0cbb817.jpeg",
     "static/media/img9.JPG": "/ofra/static/media/img9.24bae71a80e3e81905e8.JPG",
     "static/media/img16.JPG": "/ofra/static/media/img16.296421133ee0c0443239.JPG",
     "static/media/img8.JPG": "/ofra/static/media/img8.824dcbb66ed8a2577565.JPG",
@@ -44,7 +45,6 @@
     "static/media/img2.JPG": "/ofra/static/media/img2.cf9cd43e7d556c10212e.JPG",
     "static/media/img24.JPG": "/ofra/static/media/img24.346eac177d79eaf4107e.JPG",
     "static/media/book-2.jpeg": "/ofra/static/media/book-2.5487461e5eadbc96b7da.jpeg",
-    "static/media/background.png": "/ofra/static/media/background.95c86c24efa00349be8e.png",
     "static/media/img19.JPG": "/ofra/static/media/img19.10c0d1e4da211839e388.JPG",
     "static/media/mandala.png": "/ofra/static/media/mandala.24d656bd3ed39489c70d.png",
     "static/media/book-3.jpeg": "/ofra/static/media/book-3.d265fccdba026177144b.jpeg",
@@ -53,15 +53,15 @@
     "static/media/book-5.jpeg": "/ofra/static/media/book-5.bcb4374a45c8927bbda6.jpeg",
     "static/media/book-7.jpeg": "/ofra/static/media/book-7.6edec7dd72e5aaa01758.jpeg",
     "index.html": "/ofra/index.html",
-    "main.75878828.css.map": "/ofra/static/css/main.75878828.css.map",
-    "main.79b67f2f.js.map": "/ofra/static/js/main.79b67f2f.js.map",
-    "745.83b9131b.chunk.css.map": "/ofra/static/css/745.83b9131b.chunk.css.map",
-    "745.2832797b.chunk.js.map": "/ofra/static/js/745.2832797b.chunk.js.map",
+    "main.1dafee46.css.map": "/ofra/static/css/main.1dafee46.css.map",
+    "main.e90be2a8.js.map": "/ofra/static/js/main.e90be2a8.js.map",
+    "745.36713273.chunk.css.map": "/ofra/static/css/745.36713273.chunk.css.map",
+    "745.ca8c5e03.chunk.js.map": "/ofra/static/js/745.ca8c5e03.chunk.js.map",
     "593.75f132a7.chunk.css.map": "/ofra/static/css/593.75f132a7.chunk.css.map",
     "593.4e56ed92.chunk.js.map": "/ofra/static/js/593.4e56ed92.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.75878828.css",
-    "static/js/main.79b67f2f.js"
+    "static/css/main.1dafee46.css",
+    "static/js/main.e90be2a8.js"
   ]
 }
