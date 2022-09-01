@@ -1,11 +1,10 @@
 import { React, useState } from 'react'
-import booksData from '../data/books'
+import books from '../data/books'
 import '../css/books.css'
 import Modal from './Modal';
 import { printBooks } from '../utils/print';
 
 const Books = () => {
-    const { books } = booksData;
     const [currentBook, updateCurrentBook] = useState(0);
     const book = books.find(book => book.id === currentBook)
 

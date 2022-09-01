@@ -91,7 +91,7 @@ const printBooks = (books, category, handleCurrentBook) => {
                 <div className='book' key={book.dateReleased}>
                     <h4 className='book-title'>{book.title}</h4>
                     <img className='book-image'
-                        src={require('../images/placeholder.jpeg')}
+                        src={book.coverImage}
                         alt="cover of the book"
                         style={applyLinearSlide(book.id)}
                         onClick={() => handleCurrentBook(book.id)} />
