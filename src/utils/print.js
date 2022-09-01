@@ -88,7 +88,7 @@ const printBooks = (books, category, handleCurrentBook) => {
     return (
         newBooks.map((book) => {
             return (
-                <div className='book' key={book.dateReleased}>
+                <div className='book' key={book.id}>
                     <h4 className='book-title'>{book.title}</h4>
                     <img className='book-image'
                         src={book.coverImage}
