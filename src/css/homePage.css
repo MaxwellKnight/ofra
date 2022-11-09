@@ -21,9 +21,15 @@ h3 {
 .title,
 .main-title {
     margin: 1rem 0;
-    font-size: 1.5rem;
-    letter-spacing: .3rem;
+    font-size: 1.2rem;
     font-weight: 300;
+}
+
+.main-subtitle {
+    font-size: 1.1rem;
+    color: #e28743;
+    font-weight: bold;
+    margin-block-end: 2rem;
 }
 
 .main-title {

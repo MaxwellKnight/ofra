@@ -17,12 +17,15 @@ const Books = () => {
         <main className="books">
             {currentBook ? <Modal itemTitle={book.title} itemDesc={book.summary} path={book.coverImage} handleCurrentItem={handleCurrentBook} /> : ''}
             <h1 className='books-section-title'>ספרים לצעירים ולצעירים ברוחם</h1>
-            <p className='main-text'>הספרים נכתבו עבור צעירים וצעירים ברוחם, מעוררים השראה ומעבירים
+            <p className='main-text'>הסיפורים מעוררים השראה ומעבירים
                 מסרים בכל תחומי החיים.
                 הסיפורים מתרחשים בכפר סנטושה,  משמעות
                 המילה סנטושה בסנסקריט(הודית עתיקה), שביעות-רצון.
                 בכל ספר דמויות מרכזיות שונות, והעלילה סביב ערך חברתי אחר.
             </p>
+            <br />
+            <br />
+            <br />
             <div className='book-wrapper'>
                 {printBooks(books, 'children', handleCurrentBook)}
             </div>

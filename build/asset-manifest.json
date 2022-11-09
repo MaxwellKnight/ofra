@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/ofra/static/css/main.5e6c937f.css",
-    "main.js": "/ofra/static/js/main.61827b18.js",
+    "main.css": "/ofra/static/css/main.5b6d78f2.css",
+    "main.js": "/ofra/static/js/main.339846a8.js",
     "static/css/745.e44fab6b.chunk.css": "/ofra/static/css/745.e44fab6b.chunk.css",
     "static/js/745.a0507660.chunk.js": "/ofra/static/js/745.a0507660.chunk.js",
     "static/css/593.75f132a7.chunk.css": "/ofra/static/css/593.75f132a7.chunk.css",
     "static/js/593.71f121be.chunk.js": "/ofra/static/js/593.71f121be.chunk.js",
-    "static/media/book-8.jpg": "/ofra/static/media/book-8.8cd47d2b3cece5dc222d.jpg",
-    "static/media/book-2.jpg": "/ofra/static/media/book-2.4f76a59eca60bd614d6d.jpg",
-    "static/media/book-7.jpg": "/ofra/static/media/book-7.4ba9ea3d15fb8cc39df1.jpg",
-    "static/media/book-4.jpg": "/ofra/static/media/book-4.9d341e604b9d7dd744f0.jpg",
-    "static/media/book-3.jpg": "/ofra/static/media/book-3.e166094d5c3032e6b702.jpg",
-    "static/media/book-1.jpg": "/ofra/static/media/book-1.21d2d7cca00a332e52cb.jpg",
-    "static/media/book-5.jpg": "/ofra/static/media/book-5.5b60eaa5972e906ad98c.jpg",
-    "static/media/book-6.jpg": "/ofra/static/media/book-6.d34379021bb0b4a50037.jpg",
+    "static/media/book-8.jpg": "/ofra/static/media/book-8.ce1ef0fa93341e883e7e.jpg",
+    "static/media/book-1.jpg": "/ofra/static/media/book-1.bef74e3ba28736bc6873.jpg",
+    "static/media/book-2.jpg": "/ofra/static/media/book-2.f4a4fec18e5e15d8020a.jpg",
+    "static/media/book-4.jpg": "/ofra/static/media/book-4.fbb280cf4e2de02897f9.jpg",
+    "static/media/book-3.jpg": "/ofra/static/media/book-3.0641a4c36316a134ef24.jpg",
+    "static/media/book-7.jpg": "/ofra/static/media/book-7.aa0dbe4388898b99875e.jpg",
+    "static/media/book-6.jpg": "/ofra/static/media/book-6.ccba9556f9518752ef3f.jpg",
+    "static/media/book-5.jpg": "/ofra/static/media/book-5.6a74d806ddadffc087dc.jpg",
     "static/media/main-background.jpeg": "/ofra/static/media/main-background.822af896e9dbd0cbb817.jpeg",
     "static/media/img9.JPG": "/ofra/static/media/img9.24bae71a80e3e81905e8.JPG",
     "static/media/img16.JPG": "/ofra/static/media/img16.296421133ee0c0443239.JPG",
@@ -52,15 +52,15 @@
     "static/media/img19.JPG": "/ofra/static/media/img19.10c0d1e4da211839e388.JPG",
     "static/media/mandala.png": "/ofra/static/media/mandala.24d656bd3ed39489c70d.png",
     "index.html": "/ofra/index.html",
-    "main.5e6c937f.css.map": "/ofra/static/css/main.5e6c937f.css.map",
-    "main.61827b18.js.map": "/ofra/static/js/main.61827b18.js.map",
+    "main.5b6d78f2.css.map": "/ofra/static/css/main.5b6d78f2.css.map",
+    "main.339846a8.js.map": "/ofra/static/js/main.339846a8.js.map",
     "745.e44fab6b.chunk.css.map": "/ofra/static/css/745.e44fab6b.chunk.css.map",
     "745.a0507660.chunk.js.map": "/ofra/static/js/745.a0507660.chunk.js.map",
     "593.75f132a7.chunk.css.map": "/ofra/static/css/593.75f132a7.chunk.css.map",
     "593.71f121be.chunk.js.map": "/ofra/static/js/593.71f121be.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.5e6c937f.css",
-    "static/js/main.61827b18.js"
+    "static/css/main.5b6d78f2.css",
+    "static/js/main.339846a8.js"
   ]
 }

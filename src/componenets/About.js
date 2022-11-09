@@ -4,10 +4,9 @@ import '../css/about.css'
 const About = () => {
     return (
         <>
-            <h1 className='about-title'>אודות</h1>
             <div className='about'>
                 <div className='main-about'>
-                    <img src={require('../images/portrait.jpeg')} alt="" className='about-image' />
+                    <img src={require('../images/profile-img.JPG')} alt="" className='about-image' />
                 </div>
 
                 <div className='secondary-about'>
@@ -42,9 +41,10 @@ const About = () => {
                     </p>
 
                     <p className='aside-text'>
-                        בין לבין משתדלת לתת מקום לתחביביי השונים כמו -
-                        כתיבת ספרים, שירים ומנגינות,
-                        ספרונים מעוררי מחשבה, ציור וחריזת תכשיטים.
+
+                        בין לבין משתדלת לתת מקום לתחביביי השונים כמו - כתיבת ספרים (לצעירים), שירים ומנגינות,
+                        ספרונים מעוררי מחשבה, קריאה,  ציור וחריזת תכשיטים.
+
                     </p>
                 </div>
             </div>

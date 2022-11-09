@@ -20,6 +20,10 @@ strong {
     animation: reveal .4s ease;
 }
 
+.concepts-text {
+    margin-bottom: 1rem;
+}
+
 .yoga-list {
     max-width: 400px;
     margin: 2rem auto;

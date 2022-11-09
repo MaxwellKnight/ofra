@@ -48,7 +48,7 @@ const printNavItem = (separateComponents, data) => {
     const printList = list => {
         return (
             <ul className="item-list">
-                {list.map((item, index) => <li key={index} style={applyLinearSlide(index)}>{item}</li>)}
+                {list.map((item, index) => <li key={index} className={data.id === 4 ? 'start' : ''} style={applyLinearSlide(index)}>{item}</li>)}
             </ul>
         )
     }
@@ -76,7 +76,8 @@ const printNavItem = (separateComponents, data) => {
                         <p className="participant">מס משתתפים מוגבל - בתיאום מראש.</p>
                     </> : ""
             }
-            {(!separateComponents.includes(data.id)) ? <p id="main-text" className="item-main-text">{data.mainText}</p> : ""}
+            {(!separateComponents.includes(data.id)) && data.id !== 4 ? <p id="main-text" className="item-main-text">{data.mainText}</p> : ""}
+            {data.id === 4 ? data.subText.map((line, index) => <p className={index === 4 ? 'generic-p' : 'generic-paragraph'}>{line}</p>) : ''}
             {data.hasOwnProperty('list') ? printList(data.list) : ""}
             {itemToDisplay()}
         </>
@@ -89,7 +90,6 @@ const printBooks = (books, category, handleCurrentBook) => {
         newBooks.map((book) => {
             return (
                 <div className='book' key={book.id}>
-                    <h4 className='book-title'>{book.title}</h4>
                     <img className='book-image'
                         src={book.coverImage}
                         alt="cover of the book"

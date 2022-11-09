@@ -7,6 +7,18 @@
     background: none;
 }
 
+.generic-p {
+    margin-block: 3rem;
+    line-height: 1rem;
+    font-weight: bold;
+    color: #e28743;
+}
+
+.generic-paragraph {
+    margin-block: 1rem;
+    line-height: 1rem;
+}
+
 .item {
     padding-top: 80px;
     width: 90%;

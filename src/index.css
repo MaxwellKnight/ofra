@@ -12,7 +12,7 @@
   --dark-primary: #427171;
   --light-secondary: #fff3eb;
   --brown: #945f45;
-  --text-color: #4b3b2e;
+  --text-color: #18120d;
   --color: #eba134;
 }
 
@@ -44,4 +44,14 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.start::before {
+  content: '*';
+  position: absolute;
+  right: 0;
+  width: 5rem;
+  aspect-ratio: 1;
+
+  color: #eba134;
 }
