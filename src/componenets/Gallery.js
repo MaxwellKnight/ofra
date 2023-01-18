@@ -16,7 +16,7 @@ const Gallery = () => {
     return (
         <>
             {currentImage ? <Modal path={image.path} handleCurrentItem={handleCurrentImage} /> : ''}
-            <h1 className="gallery-title"> יצירות רב תחומיות עם אנשים, עם חומרים, עם מילים ובכולן נוכחת רוח.</h1>
+            <h1 className="gallery-title" style={{ color: 'darkblue' }}> יצירות רב תחומיות עם אנשים, עם חומרים, עם מילים ובכולן נוכחת רוח.</h1>
             <main className='gallery-container'>
                 {printGallery(images, handleCurrentImage)}
             </main>

@@ -98,6 +98,16 @@ h4 {
 
 }
 
+.unique {
+    color: red;
+    font-weight: bold;
+}
+
+.unique:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
 @media (max-width: 1100px) {
     .book-image {
         width: 100%;

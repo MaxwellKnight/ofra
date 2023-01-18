@@ -43,7 +43,7 @@ const printNav = (toggleIsMobile, isMobile, toggle, changeIsMobile, data) => {
 }
 
 // ============================================================================================
-const printNavItem = (separateComponents, data) => {
+const printNavItem = (separateComponents, data, toggleIsFormShown) => {
 
     const printList = list => {
         return (
@@ -58,7 +58,7 @@ const printNavItem = (separateComponents, data) => {
     const itemToDisplay = () => {
         switch (data.id) {
             case 0: return <About />
-            case 1: return <Books />
+            case 1: return <Books toggleIsFormShown={toggleIsFormShown} />
             case 2: return <Concepts />
             case 3: return <Guidence />
             case 8: return <Gallery />
@@ -73,12 +73,13 @@ const printNavItem = (separateComponents, data) => {
                 (!separateComponents.includes(data.id)) ?
                     <>
                         <h1 className="item-title">{data.title}</h1>
-                        <p className="participant">מס משתתפים מוגבל - בתיאום מראש.</p>
+                        {data.id == 4 && <p className="unique" style={{ color: 'brown', textDecoration: 'none', cursor: 'auto', fontSize: '.9rem', marginBotoom: '2rem' }}>כשמזג האוויר מאפשר יוצאים אל הטבע.</p>}
                     </> : ""
             }
             {(!separateComponents.includes(data.id)) && data.id !== 4 ? <p id="main-text" className="item-main-text">{data.mainText}</p> : ""}
             {data.id === 4 ? data.subText.map((line, index) => <p className={index === 4 ? 'generic-p' : 'generic-paragraph'}>{line}</p>) : ''}
             {data.hasOwnProperty('list') ? printList(data.list) : ""}
+            {data.id == 4 && <p className="unique" style={{ color: 'black', textDecoration: 'none', cursor: 'auto', fontSize: '1rem', marginTop: '2rem' }}>לא נדרש ניסיון קודם מגיעים בלב פתוח ואוהב.</p>}
             {itemToDisplay()}
         </>
     )

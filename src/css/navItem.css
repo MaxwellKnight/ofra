@@ -37,7 +37,7 @@
 }
 
 .item-title {
-    color: var(--dark-primary);
+    color: firebrick;
     font-size: 1.5rem;
 }
 

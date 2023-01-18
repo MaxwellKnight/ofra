@@ -17,9 +17,10 @@
 
 .main-guidence-text {
     font-size: 1em;
-    margin: 2rem 0;
+    margin: 1rem 0;
     letter-spacing: 1px;
-    line-height: 1.5em;
+    line-height: 1.8em;
+    font-weight: 500;
 }
 
 .small-text {

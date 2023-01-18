@@ -5,11 +5,8 @@ import { dragElement } from "../utils/animations";
 import '../css/contact.css'
 import Form from './Form';
 
-const Contact = () => {
+const Contact = ({ isFormShown, toggleIsFormShown }) => {
 
-    const [isFormShown, changeIsFormShown] = useState(false)
-
-    const toggleIsFormShown = () => changeIsFormShown(prev => !prev)
 
     //dragElement defined in ../utils. allows element to be draggable
     useEffect(() => {

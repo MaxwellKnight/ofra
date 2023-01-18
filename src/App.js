@@ -13,6 +13,10 @@ export default function App() {
   const [id, changeId] = useState(1)
   const { data } = require('./data/data')
 
+  const [isFormShown, changeIsFormShown] = useState(false)
+
+  const toggleIsFormShown = () => changeIsFormShown(prev => !prev)
+
   const toggleIsHome = (isVisible, id) => {
     changeIsHome(isVisible)
     changeId(id)
@@ -20,12 +24,12 @@ export default function App() {
 
   return (
     <>
-      <Contact />
+      <Contact isFormShown={isFormShown} toggleIsFormShown={toggleIsFormShown} />
       <Navbar data={data} toggle={toggleIsHome} />
       <div className="container">
         <React.Suspense fallback={<Spinner />}>
           {/* Check if the user  returned to the hompage or navigated to a different section */}
-          {isHome ? <Homepage data={data} toggle={toggleIsHome} /> : <NavItem data={data[id]} toggle={toggleIsHome} />}
+          {isHome ? <Homepage data={data} toggle={toggleIsHome} /> : <NavItem data={data[id]} toggle={toggleIsHome} toggleIsFormShown={toggleIsFormShown} />}
         </React.Suspense>
       </div>
     </>
