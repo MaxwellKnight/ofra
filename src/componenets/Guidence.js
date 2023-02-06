@@ -19,12 +19,10 @@ const Guidence = () => {
                     שתעזור למורות בתחילת דרכן
                     מההבט הרגשי-חברתי.
                 </p>
-                <br />
-                <p className='alert-text' style={{ color: 'brown', fontWeigh: '700', fontSize: '1.2rem' }}>
-                    ״ לחנך ולהוביל דרך הלב. ״
-                </p>
             </div>
 
+            <p className='small-text small-text_sub'
+                stlye={{ fontSize: '2rem' }}>לחנך ולהוביל דרך הלב</p>
             <p className='small-text'>סדנא חוויתית - שישה מפגשים בהיבט הרגשי חברתי</p>
             <p className='main-guidence-text'>
                 בנושאי המפגשים מושם דגש על ההיבט הרגשי-חברתי במשולש מורה-הורה-תלמיד .

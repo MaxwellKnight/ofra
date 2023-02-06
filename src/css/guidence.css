@@ -27,6 +27,14 @@
     font-weight: 700;
     font-size: 1.1em;
     text-align: right;
+    text-align: center;
+}
+
+.small-text_sub {
+    text-align: center;
+    font-size: 1.4em;
+    margin-bottom: 1rem;
+    color: orangered;
 }
 
 .bold {
