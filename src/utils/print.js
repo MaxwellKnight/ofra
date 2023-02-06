@@ -7,6 +7,7 @@ import Books from "../componenets/Books"
 import About from "../componenets/About"
 import Concepts from "../componenets/Concepts"
 import Cloud from "../componenets/Cloud"
+import Yoga from "../componenets/Yoga"
 import { applyLinearSlide } from "./animations"
 
 /**
@@ -62,6 +63,7 @@ const printNavItem = (separateComponents, data, toggleIsFormShown) => {
             case 2: return <Concepts />
             case 3: return <Guidence />
             case 8: return <Gallery />
+            case 9: return <Yoga />
             default:
         }
     }
