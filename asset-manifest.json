@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/ofra/static/css/main.a984c9d4.css",
-    "main.js": "/ofra/static/js/main.9f435ee1.js",
-    "static/css/579.64277aad.chunk.css": "/ofra/static/css/579.64277aad.chunk.css",
+    "main.js": "/ofra/static/js/main.ad574d65.js",
+    "static/css/579.68acc4db.chunk.css": "/ofra/static/css/579.68acc4db.chunk.css",
     "static/js/579.61715b01.chunk.js": "/ofra/static/js/579.61715b01.chunk.js",
     "static/css/593.a339af18.chunk.css": "/ofra/static/css/593.a339af18.chunk.css",
     "static/js/593.578bb054.chunk.js": "/ofra/static/js/593.578bb054.chunk.js",
@@ -55,14 +55,14 @@
     "static/media/miriwin-webfont.ttf": "/ofra/static/media/miriwin-webfont.7e81a89c8904231ba276.ttf",
     "index.html": "/ofra/index.html",
     "main.a984c9d4.css.map": "/ofra/static/css/main.a984c9d4.css.map",
-    "main.9f435ee1.js.map": "/ofra/static/js/main.9f435ee1.js.map",
-    "579.64277aad.chunk.css.map": "/ofra/static/css/579.64277aad.chunk.css.map",
+    "main.ad574d65.js.map": "/ofra/static/js/main.ad574d65.js.map",
+    "579.68acc4db.chunk.css.map": "/ofra/static/css/579.68acc4db.chunk.css.map",
     "579.61715b01.chunk.js.map": "/ofra/static/js/579.61715b01.chunk.js.map",
     "593.a339af18.chunk.css.map": "/ofra/static/css/593.a339af18.chunk.css.map",
     "593.578bb054.chunk.js.map": "/ofra/static/js/593.578bb054.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.a984c9d4.css",
-    "static/js/main.9f435ee1.js"
+    "static/js/main.ad574d65.js"
   ]
 }
