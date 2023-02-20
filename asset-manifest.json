@@ -1,9 +1,9 @@
 {
   "files": {
     "main.css": "/ofra/static/css/main.a984c9d4.css",
-    "main.js": "/ofra/static/js/main.533b9bbb.js",
-    "static/css/745.d13325da.chunk.css": "/ofra/static/css/745.d13325da.chunk.css",
-    "static/js/745.d1f9e9b0.chunk.js": "/ofra/static/js/745.d1f9e9b0.chunk.js",
+    "main.js": "/ofra/static/js/main.9f435ee1.js",
+    "static/css/579.64277aad.chunk.css": "/ofra/static/css/579.64277aad.chunk.css",
+    "static/js/579.61715b01.chunk.js": "/ofra/static/js/579.61715b01.chunk.js",
     "static/css/593.a339af18.chunk.css": "/ofra/static/css/593.a339af18.chunk.css",
     "static/js/593.578bb054.chunk.js": "/ofra/static/js/593.578bb054.chunk.js",
     "static/media/book-8.jpg": "/ofra/static/media/book-8.ce1ef0fa93341e883e7e.jpg",
@@ -30,6 +30,7 @@
     "static/media/img25.JPG": "/ofra/static/media/img25.05daa0c969d9f7b60fe2.JPG",
     "static/media/img18.JPG": "/ofra/static/media/img18.1dac09cfca9e7311a63b.JPG",
     "static/media/img3.JPG": "/ofra/static/media/img3.50852bebfb36ea9b4c4c.JPG",
+    "static/media/profile-new.jpg": "/ofra/static/media/profile-new.050fe5141624bf41a457.jpg",
     "static/media/img21.JPG": "/ofra/static/media/img21.a1fd0e4adea6406a28f6.JPG",
     "static/media/img31.JPG": "/ofra/static/media/img31.40f6d18d027ba8e3ffc5.JPG",
     "static/media/img22.JPG": "/ofra/static/media/img22.f629da747f8e78d8f5ca.JPG",
@@ -49,19 +50,19 @@
     "static/media/img7.JPG": "/ofra/static/media/img7.b8b8b81f3c035ed1f047.JPG",
     "static/media/img2.JPG": "/ofra/static/media/img2.cf9cd43e7d556c10212e.JPG",
     "static/media/img24.JPG": "/ofra/static/media/img24.346eac177d79eaf4107e.JPG",
-    "static/media/profile-img.JPG": "/ofra/static/media/profile-img.b620513995a22ee03f50.JPG",
     "static/media/img19.JPG": "/ofra/static/media/img19.10c0d1e4da211839e388.JPG",
     "static/media/mandala.png": "/ofra/static/media/mandala.24d656bd3ed39489c70d.png",
+    "static/media/miriwin-webfont.ttf": "/ofra/static/media/miriwin-webfont.7e81a89c8904231ba276.ttf",
     "index.html": "/ofra/index.html",
     "main.a984c9d4.css.map": "/ofra/static/css/main.a984c9d4.css.map",
-    "main.533b9bbb.js.map": "/ofra/static/js/main.533b9bbb.js.map",
-    "745.d13325da.chunk.css.map": "/ofra/static/css/745.d13325da.chunk.css.map",
-    "745.d1f9e9b0.chunk.js.map": "/ofra/static/js/745.d1f9e9b0.chunk.js.map",
+    "main.9f435ee1.js.map": "/ofra/static/js/main.9f435ee1.js.map",
+    "579.64277aad.chunk.css.map": "/ofra/static/css/579.64277aad.chunk.css.map",
+    "579.61715b01.chunk.js.map": "/ofra/static/js/579.61715b01.chunk.js.map",
     "593.a339af18.chunk.css.map": "/ofra/static/css/593.a339af18.chunk.css.map",
     "593.578bb054.chunk.js.map": "/ofra/static/js/593.578bb054.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.a984c9d4.css",
-    "static/js/main.533b9bbb.js"
+    "static/js/main.9f435ee1.js"
   ]
 }
