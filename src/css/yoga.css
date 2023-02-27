@@ -1,25 +1,25 @@
 .yoga-page {
-    margin-block-start: 2rem;
-    line-height: 1.5;
-    font-size: 1.2rem;
-    font-weight: 400;
-    max-width: 50rem;
-    margin-inline: auto;
+	margin-block-start: 2rem;
+	line-height: 1.5;
+	font-size: 1.2rem;
+	font-weight: 400;
+	max-width: 50rem;
+	margin-inline: auto;
 }
 
 .yoga-page header {
-    margin-block-end: 2rem;
+	margin-block-end: 2rem;
 }
 
 .yoga-page section {
-    margin-block: 2rem;
+	margin-block: 2rem;
 }
 
 #yoga-subheader {
-    color: navy;
-    margin-block: 1rem;
+	color: navy;
+	margin-block: 1rem;
 }
 
-.yoda-down-desc {
-    margin-block: 2rem;
+.yoga-down-desc {
+	margin-block-start: 2rem;
 }

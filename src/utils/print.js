@@ -7,6 +7,7 @@ import Books from "../componenets/Books"
 import About from "../componenets/About"
 import Cloud from "../componenets/Cloud"
 import Yoga from "../componenets/Yoga"
+import '../css/yoga.css'
 import { applyLinearSlide } from "./animations"
 
 /**
@@ -81,6 +82,15 @@ const printNavItem = (separateComponents, data, toggleIsFormShown) => {
 			{data.id === 3 ? data.subText.map((line, index) => <p className={index === 4 ? 'generic-p' : 'generic-paragraph'}>{line}</p>) : ''}
 			{data.hasOwnProperty('list') ? printList(data.list) : ""}
 			{data.id === 3 && <p className="unique" style={{ color: 'black', textDecoration: 'none', cursor: 'auto', fontSize: '1rem', marginTop: '2rem' }}>לא נדרש ניסיון קודם מגיעים בלב פתוח ואוהב.</p>}
+			{data.id === 3 &&
+				<p className="yoga-down-desc">
+					** זמנים ומיקום יימסרו בהרשמה מראש.
+					<br />
+					** ניתן להזמין  מיפגש חד-פעמי לרגל ציון ארוע של חברים, משפחה, מקומות עבודה וכו'.
+					<br />
+					ניתן לרכוש שובר מתנה SS- מיפגש פרטני
+				</p>
+			}
 		</>
 	)
 }
