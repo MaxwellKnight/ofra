@@ -84,11 +84,10 @@ const printNavItem = (separateComponents, data, toggleIsFormShown) => {
 			{data.id === 3 && <p className="unique" style={{ color: 'black', textDecoration: 'none', cursor: 'auto', fontSize: '1rem', marginTop: '2rem' }}>לא נדרש ניסיון קודם מגיעים בלב פתוח ואוהב.</p>}
 			{data.id === 3 &&
 				<p className="yoga-down-desc">
-					** זמנים ומיקום יימסרו בהרשמה מראש.
+					** זמנים ומיקום יימסרו בהרשמה מראש **
 					<br />
-					** ניתן להזמין  מיפגש חד-פעמי לרגל ציון ארוע של חברים, משפחה, מקומות עבודה וכו'.
 					<br />
-					ניתן לרכוש שובר מתנה SS- מיפגש פרטני
+					** ניתן להזמין  מיפגש חד-פעמי לרגל ציון ארוע של חברים, משפחה, מקומות עבודה וכו' **
 				</p>
 			}
 		</>
