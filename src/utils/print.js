@@ -78,6 +78,12 @@ const printNavItem = (separateComponents, data, toggleIsFormShown) => {
 						{data.id === 3 && <p className="unique" style={{ color: 'brown', textDecoration: 'none', cursor: 'auto', fontSize: '.9rem', marginBotoom: '2rem' }}>כשמזג האוויר מאפשר יוצאים אל הטבע.</p>}
 					</> : ""
 			}
+			{data.id === 5 &&
+				<p style={{ color: '#007000', fontWeight: 'bold' }}>
+					אם את/ה הגעת לדף זה, יש מצב שהגיע הזמן שלך לדייק את עצמך בחיים,<br />
+					או להמליץ לאדם יקר לעשות את הצעד הבא שלו.
+				</p>
+			}
 			{(!separateComponents.includes(data.id)) && data.id !== 4 ? <p id="main-text" className="item-main-text">{data.mainText}</p> : ""}
 			{data.id === 3 ? data.subText.map((line, index) => <p className={index === 4 ? 'generic-p' : 'generic-paragraph'}>{line}</p>) : ''}
 			{data.hasOwnProperty('list') ? printList(data.list) : ""}
