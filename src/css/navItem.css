@@ -1,73 +1,105 @@
+@font-face {
+	font-family: "Comix";
+	src: local("GoldmanBold"),
+		url("../fonts/comix/comixno2clm_medium-webfont.ttf") format("truetype");
+	font-weight: bold;
+}
+
 .participant {
-    font-weight: 700;
-    color: var(--brown);
+	font-weight: 700;
+	color: var(--brown);
 }
 
 .container {
-    background: none;
+	background: none;
 }
 
 .generic-p {
-    margin-block: 3rem;
-    line-height: 1rem;
-    font-weight: bold;
-    color: #e28743;
+	margin-block: 3rem;
+	line-height: 1rem;
+	font-weight: bold;
+	color: #e28743;
 }
 
 .generic-paragraph {
-    margin-block: 1rem;
-    line-height: 1rem;
+	margin-block: 1rem;
+	line-height: 1rem;
 }
 
 .item {
-    padding-top: 80px;
-    width: 90%;
-    display: block;
-    margin: 0 auto;
-    padding-bottom: .5rem;
-    white-space: pre-wrap;
-    text-align: center;
-    animation: slidein 1s ease;
+	padding-top: 80px;
+	width: 90%;
+	display: block;
+	margin: 0 auto;
+	padding-bottom: .5rem;
+	white-space: pre-wrap;
+	text-align: center;
+	animation: slidein 1s ease;
 }
 
 @media (min-width: 675px) {
-    .item {
-        padding-top: 20px;
-    }
+	.item {
+		padding-top: 20px;
+	}
 }
 
 .item-title {
-    color: firebrick;
-    font-size: 1.5rem;
+	color: firebrick;
+	font-size: 1.5rem;
 }
 
 .item-main-text {
-    margin: 3rem 0;
-    line-height: 2em;
+	margin: 3rem 0;
+	line-height: 2em;
 }
 
 .item-list {
-    width: 70%;
-    margin: 0 auto;
-    list-style-type: none;
+	width: 70%;
+	margin: 0 auto;
+	list-style-type: none;
 }
 
 .item-list li:first-child {
-    color: var(--dark-primary);
-    width: fit-content;
-    margin: 0 auto;
-    font-weight: 700;
-    letter-spacing: 3px;
-    border-bottom: 1px solid #e2e2e2;
+	color: var(--dark-primary);
+	width: fit-content;
+	margin: 0 auto;
+	font-weight: 700;
+	letter-spacing: 3px;
+	border-bottom: 1px solid #e2e2e2;
 }
 
 .item-list li {
-    padding: 1rem 0;
-    letter-spacing: 1px;
+	padding: 1rem 0;
+	letter-spacing: 1px;
+}
+
+.outdoor-activity span {
+	font-size: 1.5em;
+	font-weight: bold;
+	font-family: 'Comix';
+}
+
+.outdoor-activity {
+	margin-block-start: 2em;
+}
+
+.outdoor-activity .first {
+	color: rgb(0, 112, 0);
+	text-shadow: 0px 0 10px rgb(0, 255, 0);
+}
+
+.outdoor-activity .second {
+	color: rgb(255, 136, 0);
+	text-shadow: 0px 0 10px rgb(246, 255, 0);
+}
+
+.outdoor-activity .third {
+	color: rgb(255, 0, 251);
+	text-shadow: 0px 0 10px rgb(0, 255, 208);
 }
 
 @media (min-width: 675px) {
-    .item {
-        font-size: 1.2em;
-    }
+	.item {
+		font-size: 1.2em;
+	}
 }

@@ -81,6 +81,15 @@ const printNavItem = (separateComponents, data, toggleIsFormShown) => {
 			{(!separateComponents.includes(data.id)) && data.id !== 4 ? <p id="main-text" className="item-main-text">{data.mainText}</p> : ""}
 			{data.id === 3 ? data.subText.map((line, index) => <p className={index === 4 ? 'generic-p' : 'generic-paragraph'}>{line}</p>) : ''}
 			{data.hasOwnProperty('list') ? printList(data.list) : ""}
+			{data.id === 3 &&
+				<p className="outdoor-activity">
+					<span className="first">נעים בתנועה רכה</span>  -  מתחברים לעצמנו ולסביבה דרך יוגה מתונה, נשימה, מדיטציית מיינדפולנס.<br />
+					<br />
+					<span className="second">מילים-מילים מהראש ומהלב</span> -  מוצאים את הכוח שיש במילים, ובכתיבה אינטואיטיבית צועדים לכיוון הריפוי, הצמיחה והשיחרור.<br />
+					<br />
+					<span className="third">צלילים מרפאים</span> -  מקשיבים לסביבה ומשלבים מדיטציית צלילים מרפאים עם קערות טיבטיות.<br />
+				</p>
+			}
 			{data.id === 3 && <p className="unique" style={{ color: 'black', textDecoration: 'none', cursor: 'auto', fontSize: '1rem', marginTop: '2rem' }}>לא נדרש ניסיון קודם מגיעים בלב פתוח ואוהב.</p>}
 			{data.id === 3 &&
 				<p className="yoga-down-desc">
