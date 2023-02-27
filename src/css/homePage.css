@@ -5,6 +5,13 @@
 	font-weight: bold;
 }
 
+@font-face {
+	font-family: "Anka";
+	src: local("GoldmanBold"),
+		url("../fonts/anka/ankaclm-bold-webfont.ttf") format("truetype");
+	font-weight: bold;
+}
+
 h1,
 h3 {
 	color: var(--dark-primary)
@@ -39,9 +46,10 @@ h3 {
 .yoga-way-title-main {
 	font-size: 1.5rem;
 	margin-block: .7rem;
-	color: orange;
+	color: #eb6734;
 	text-shadow: 0 0 10px yellow;
-	font-family: 'Miri';
+	font-family: 'Anka';
+	letter-spacing: 5px;
 }
 
 .yoga-way-sub {

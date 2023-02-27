@@ -1,5 +1,6 @@
-import '../fonts/miri/miriwin-webfont.ttf';
 import '../css/homePage.css'
+import '../fonts/miri/miriwin-webfont.ttf';
+import '../fonts/anka/ankaclm-bold-webfont.ttf';
 import { printClouds } from '../utils/print'
 const { clouds } = require('../data/clouds.js')
 const backgroundImage = require('../images/main-background.jpeg')
