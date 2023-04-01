@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.ef848ba5.css",
-    "main.js": "/static/js/main.91bac685.js",
+    "main.js": "/static/js/main.8b10962c.js",
     "static/css/309.a89bb3f9.chunk.css": "/static/css/309.a89bb3f9.chunk.css",
     "static/js/309.8061e086.chunk.js": "/static/js/309.8061e086.chunk.js",
     "static/css/593.3cbc7e69.chunk.css": "/static/css/593.3cbc7e69.chunk.css",
@@ -57,7 +57,7 @@
     "static/media/ankaclm-bold-webfont.ttf": "/static/media/ankaclm-bold-webfont.8b4b0a14791cdf4b6fb0.ttf",
     "index.html": "/index.html",
     "main.ef848ba5.css.map": "/static/css/main.ef848ba5.css.map",
-    "main.91bac685.js.map": "/static/js/main.91bac685.js.map",
+    "main.8b10962c.js.map": "/static/js/main.8b10962c.js.map",
     "309.a89bb3f9.chunk.css.map": "/static/css/309.a89bb3f9.chunk.css.map",
     "309.8061e086.chunk.js.map": "/static/js/309.8061e086.chunk.js.map",
     "593.3cbc7e69.chunk.css.map": "/static/css/593.3cbc7e69.chunk.css.map",
@@ -65,6 +65,6 @@
   },
   "entrypoints": [
     "static/css/main.ef848ba5.css",
-    "static/js/main.91bac685.js"
+    "static/js/main.8b10962c.js"
   ]
 }

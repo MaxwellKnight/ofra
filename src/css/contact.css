@@ -35,6 +35,9 @@
 .contact-icon {
 	font-size: .8em;
 	transition: filter .2s ease;
+	display: block;
+	text-align: center;
+	font-weight: bold;
 }
 
 @media (min-width: 675px) {
@@ -46,6 +49,7 @@
 	}
 
 	.contact-icon {
-		font-size: 2em;
+		display: block;
+		font-size: 1em;
 	}
 }

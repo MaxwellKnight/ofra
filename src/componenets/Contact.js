@@ -1,6 +1,4 @@
 import { React, useEffect } from 'react'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faPhone } from '@fortawesome/free-solid-svg-icons';
 import { dragElement } from "../utils/animations";
 import '../css/contact.css'
 import Form from './Form';
@@ -16,7 +14,7 @@ const Contact = ({ isFormShown, toggleIsFormShown }) => {
 	return (
 		<div id='contact-container' className='contact'>
 			<div id='contact' className='contact-wrapper'>
-				<FontAwesomeIcon icon={faPhone} className='contact-icon' onClick={toggleIsFormShown} />
+				<span className='contact-icon' onClick={toggleIsFormShown}>ליצירת קשר</span>
 				{isFormShown ? <Form /> : ''}
 			</div>
 		</div>

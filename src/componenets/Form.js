@@ -1,4 +1,5 @@
-import React, { useState } from 'react'
+import React, { useState, useRef } from 'react'
+import emailjs from '@emailjs/browser';
 import '../css/form.css'
 
 const Form = () => {
@@ -7,8 +8,9 @@ const Form = () => {
 		fullName: '',
 		email: '',
 		phone: '',
-		notes: 'לדוגמא: פנייה בנושא ליווי מורות'
+		notes: ''
 	})
+	const form = useRef();
 
 	const handleFormData = event => {
 		const name = event.target.name
@@ -18,10 +20,23 @@ const Form = () => {
 			[name]: value
 		}))
 	}
+	const sendEmail = (e) => {
+		e.preventDefault();
 
+		emailjs.sendForm('service_gzgrmnf', 'template_xsi7wx4', form.current, 'UGPBw8rDMI9XD9CTo')
+			.then((result) => {
+				console.log(result.text);
+			}, (error) => {
+				console.log(error.text);
+			});
+
+		e.target.reset();
+	};
 	return (
 		<div className='contact-form'>
-			<form action='#'>
+			<p>אל: <span>ofritush@gmail.com</span></p>
+			<br />
+			<form ref={form} onSubmit={sendEmail}>
 
 				<label htmlFor='name'>שם</label>
 				<input
@@ -65,7 +80,7 @@ const Form = () => {
 					onChange={handleFormData}
 					required
 				></textarea>
-				<button type='submit'>שלח/י</button>
+				<button>שלח/י</button>
 			</form>
 		</div>
 	)
