@@ -12,7 +12,6 @@ const Homepage = () => {
 			<section className="main-hero">
 				<img src={backgroundImage} alt="" className="main-image" />
 				<h1 className="yoga-way-title">איזון גוף-נפש-רוח </h1>
-				<h2 className="yoga-way-title-main">בדרך היוגה </h2>
 				<p className="yoga-way-sub">הדרכה וליווי בתהליכי התפתחות</p>
 				<p className="yoga-way-sub">בהיבט רגשי-חברתי</p>
 				<h2 className="yoga-way-title-main">פרטני וקבוצתי</h2>
