@@ -1,0 +1,115 @@
+/* TYPOGRAPHY */
+.books-section-title {
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+    line-height: 2.5rem;
+    font-size: 2em;
+    color: #254545;
+}
+
+h4 {
+    padding: 2rem 2rem;
+    font-size: 1.5em;
+    font-weight: 300;
+    margin: 0;
+    font-weight: 400;
+    font-style: italic;
+    color: var(--dark-primary);
+}
+
+.book-image {
+    display: block;
+    height: 300px;
+    margin: 0 auto;
+    object-fit: cover;
+    border-radius: 8px;
+    transition: all .2s ease-in-out;
+    box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.4);
+}
+
+/* GENERAL LAYOUT */
+
+.books {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-size: .9rem;
+    animation: reveal .5s ease;
+}
+
+.book {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    margin-bottom: 3rem;
+}
+
+.book-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.book-image:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+    box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.4);
+}
+
+/* ======== MEDIA QUERIES ========== */
+
+@media (min-width: 800px) {
+
+    h4 {
+        letter-spacing: 1px;
+        font-size: 1.2em;
+    }
+
+    .book time {
+        margin-top: 1rem;
+    }
+
+    .book-wrapper h1 {
+        margin-top: 0;
+    }
+
+    .book-image {
+        width: 200px;
+        height: 300px;
+        max-width: 100%;
+    }
+
+    .book-wrapper {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .book {
+        margin: 0 .5rem;
+        width: 25%;
+    }
+
+    .book-title {
+        margin: 0;
+        align-self: center;
+    }
+
+}
+
+.unique {
+    color: red;
+    font-weight: bold;
+}
+
+.unique:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+@media (max-width: 1100px) {
+    .book-image {
+        width: 100%;
+    }
+}

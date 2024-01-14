@@ -1,0 +1,175 @@
+/*============================
+    navigation styles 
+  ============================
+*/
+
+img {
+    width: 100%;
+}
+
+.navigation {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 70px;
+    width: 100%;
+    background-color: var(--light-primary);
+    box-shadow: 1px 1px 15px rgba(0, 0, 0, .2);
+    position: fixed;
+    z-index: 1000;
+}
+
+.navigation-logo {
+    width: 60px;
+    padding: .5em;
+    order: 1;
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+    opacity: .5;
+}
+
+.slideout {
+    animation: slideout .3s ease;
+}
+
+.navigation-logo:hover {
+    transform: rotateZ(-90deg) scale(1.1);
+}
+
+.navigation-bar {
+    font-size: 1.5em;
+    display: block;
+    padding: 0 1em;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+.navigation-bar:hover {
+    transform: scale(1.1);
+}
+
+.navigation-list {
+    display: none;
+}
+
+.navigation-item {
+    transition: color .1s ease-in-out,
+        background-color .1s ease-in-out,
+}
+
+.navigation-item:hover,
+.navigation-item:focus {
+    background-color: var(--dark-primary);
+    color: var(--light-secondary);
+    cursor: pointer;
+}
+
+/* when the viewport reaches minimum of 675px
+    then these styles will apply, this section allows
+    the application to become responsive
+*/
+@media screen and (min-width: 675px) {
+
+    body {
+        font-size: 14px;
+    }
+
+    .navigation {
+        color: #254545;
+        min-height: 100vh;
+        flex-direction: column;
+        width: 20%;
+        text-align: center;
+        background: var(--light-primary);
+        justify-content: flex-start;
+        font-size: 14.5px;
+    }
+
+    .navigation-item {
+        line-height: 1.2rem;
+        padding: 1.2em;
+        list-style: none;
+        width: 100%;
+        font-weight: 700;
+    }
+
+    @media (max-width: 1000px) {
+        .navigation-item {
+            padding: 1em;
+        }
+    }
+
+    .navigation-logo {
+        width: 50%;
+        aspect-ratio: 1;
+        order: -1;
+
+    }
+
+    .navigation-list {
+        margin-top: 1rem;
+        display: block;
+    }
+
+    .navigation-bar {
+        display: none;
+    }
+}
+
+.nav-item-wrapper {
+    width: 100%;
+    height: 100vh;
+}
+
+.nav-list-mobile {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    padding-top: 5rem;
+    color: #254545;
+    background-color: var(--light-primary);
+    text-align: center;
+    animation: slidein .3s ease-in-out;
+}
+
+.nav-item-mobile {
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+    padding: 1rem;
+    cursor: pointer;
+    font-size: 1.2rem;
+    font-weight: 700;
+    transition: color .1s ease-in-out, background-color .1s ease-in-out;
+}
+
+.nav-list-mobile:last-child {
+    padding-bottom: 20rem;
+}
+
+.nav-item-mobile:hover,
+.nav-item-mobile:focus {
+    background-color: var(--dark-primary);
+    color: var(--light-secondary);
+    cursor: pointer;
+}
+
+.close {
+    font-size: 3rem;
+    width: fit-content;
+    display: block;
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    cursor: pointer;
+    color: var(--light-secondary);
+    transition: all 0.3s ease-in-out;
+}
+
+.close:hover {
+    transform: scale(0.9);
+    transform: rotateZ(90deg);
+}

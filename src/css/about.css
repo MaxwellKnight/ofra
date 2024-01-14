@@ -1,0 +1,37 @@
+.about-text,
+.aside-text {
+    margin: 1rem 0;
+    font-size: 1em;
+    line-height: 2rem;
+}
+
+.about-title {
+    margin-top: 50px;
+}
+
+.about-image {
+    max-height: 400px;
+    object-fit: cover;
+    border-radius: 50%;
+    animation: float 3s infinite ease-in-out;
+}
+
+@media (min-width: 675px) {
+    .about {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .about-title {
+        margin-top: 1rem;
+    }
+
+    .about-image {
+        max-width: 300px;
+    }
+
+    .secondary-about {
+        max-width: 600px;
+        margin: 0 auto;
+    }
+}

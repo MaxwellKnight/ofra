@@ -1,0 +1,134 @@
+/* ====== CLOUD LAYOUT SETTINGS ==========*/
+.cloud {
+    background-color: var(--color);
+    width: 200px;
+    height: 80px;
+    font-size: .9rem;
+    padding: 1rem;
+    border-radius: 150px;
+    box-shadow: 10px 10px rgba(0, 0, 0, 0.2);
+    animation: cloudFloat 5s infinite;
+    cursor: pointer;
+}
+
+.cloud:hover {
+    animation-play-state: paused;
+}
+
+.cloud::after {
+    content: '';
+    background-color: var(--color);
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    top: -50px;
+    left: 120px;
+    z-index: -100;
+}
+
+.cloud::before {
+    content: '';
+    background-color: var(--color);
+    position: absolute;
+    width: 120px;
+    height: 100px;
+    border-radius: 50%;
+    top: -50px;
+    left: 50px;
+    z-index: -100;
+}
+
+.cloud-text-wrapper,
+.hidden {
+    border-radius: 20px;
+}
+
+.cloud-text-wrapper {
+    max-height: 50px;
+    padding: .5em;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    transition: max-height 2s ease-in-out;
+    filter: blur(.5px);
+}
+
+.cloud-container {
+    transform: scale(0.8);
+    margin-top: 5em;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    transition: all .2s ease-in-out;
+}
+
+/* ================================================ */
+
+
+/* =========== POP-UP ANIMATION SETTINGS ========== */
+.hidden {
+    position: absolute;
+    background-color: var(--light-secondary);
+    padding: .5rem;
+    border: 1px solid var(--light-primary);
+    box-shadow: 1px 1px 10px rgba(255, 255, 255, .2);
+    transform: translatex(800px);
+    opacity: 0;
+    cursor: pointer;
+    z-index: 1;
+    transition: transform .2s ease-in-out, opacity .3s ease-in-out;
+}
+
+.expend {
+    transform: translatex(0);
+    opacity: 1;
+}
+
+/* ================================================== */
+
+.quote {
+    font-weight: 600;
+    margin: .5rem 0;
+}
+
+.ls-1 {
+    font-size: 1.1rem;
+    color: #000;
+}
+
+
+/* ================ MEDIA QUERIES ===================== */
+@media (min-width: 675px) {
+
+    .cloud-text-wrapper:hover,
+    .cloud-text-wrapper:focus {
+        max-height: 50px;
+    }
+
+    .cloud-container:hover,
+    .cloud-container:focus {
+        transform: scale(1.1) translateY(-20px);
+        z-index: 1;
+    }
+
+    .hidden {
+        transform: translatey(800px);
+    }
+
+    .expend {
+        transform: translatey(-100px);
+    }
+}
+
+/* ================================================== */
+
+/* CLOUD FLOAT ANIMATION */
+@keyframes cloudFloat {
+    0% {
+        transform: translateX(0);
+    }
+
+    50% {
+        transform: translateX(-20px);
+    }
+}

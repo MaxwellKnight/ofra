@@ -1,0 +1,57 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+:root {
+  /* creating variables for convinence */
+  --light-primary: #78b0b0;
+  --dark-primary: #427171;
+  --light-secondary: #fff3eb;
+  --brown: #945f45;
+  --text-color: #18120d;
+  --color: #eba134;
+}
+
+#root {
+  width: 100%;
+  color: var(--text-color);
+  position: relative;
+}
+
+h1 {
+  margin: 1em;
+}
+
+@media (min-width: 675px) {
+  body {
+    font-size: 14px;
+  }
+}
+
+body {
+  font-family: 'Rubik', sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  background-color: #fff3eb;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.start::before {
+  content: '*';
+  position: absolute;
+  right: 0;
+  width: 5rem;
+  aspect-ratio: 1;
+
+  color: #eba134;
+}

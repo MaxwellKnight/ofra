@@ -1,0 +1,58 @@
+.guidence h1 {
+    font-size: 1.4rem;
+    padding-top: .5em;
+}
+
+@media (min-width: 675px) {
+    h1 {
+        font-size: 2em;
+    }
+}
+
+.guidence {
+    max-width: 700px;
+    margin: 0 auto;
+    animation: reveal .3s ease;
+}
+
+.main-guidence-text {
+    font-size: 1em;
+    margin: 1rem 0;
+    letter-spacing: 1px;
+    line-height: 1.8em;
+    font-weight: 500;
+}
+
+.small-text {
+    font-weight: 700;
+    font-size: 1.1em;
+    text-align: right;
+    text-align: center;
+}
+
+.small-text_sub {
+    text-align: center;
+    font-size: 1.4em;
+    margin-bottom: 1rem;
+    color: orangered;
+}
+
+.bold {
+    font-size: 2.5rem;
+    display: block;
+}
+
+
+.alert {
+    padding: 1rem 2rem;
+    border-radius: 6px;
+    margin-bottom: 2rem;
+}
+
+.alert-text {
+    border: 1px solid rgba(0, 0, 0, .1);
+    padding: 1rem 2rem;
+    margin: 1rem 0;
+    border-radius: 6px;
+    font-weight: 500;
+}
